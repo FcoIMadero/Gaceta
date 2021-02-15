@@ -13,12 +13,12 @@
         <link href="style.css" rel="stylesheet">
         <link rel="stylesheet" href="blocks.css">
     </head>
-    <body style="background-image: url('fondo_01.png'); background-color: rgba(64, 0, 25);" class="background-left-top">
+    <body style="background-image: url('fondo_01.png'); background-color: rgba(162, 131, 47, 0.6);">
         <!-- Bootstrap core JavaScript
     ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
         <header> 
-            <nav class="bg-white navbar navbar-expand-lg navbar-light py-4 py-lg-2 text-uppercase"> 
+            <nav class="navbar navbar-dark navbar-expand-lg py-4 py-lg-2 text-uppercase" style="background: linear-gradient(90deg, #000000, #434343);"> 
                 <div class="container"> 
                     <img src="titulo_logo_01.png" width="80" style="margin-right: 10px;"> 
                     <img src="titulo_texto_01.png" width="170" style="margin-top: 5px;">
@@ -91,70 +91,8 @@ function autoSlide() {
         }
     }
     autoSlide();
-	</script>
-            <style>
-			*{
-				margin: 0;
-				padding: 0;
-			}
-			[type=radio] {
-				display: none;
-			}
-			#s{
-				height: 40vw;
-				position: relative;
-				perspective: 1000px;
-				transform-style: preserve-3d;
-			}
-			#s label{
-				margin: auto;
-				width: 70%;
-				height: 100%;
-				border-radius: 4px;
-				position: absolute;
-				left: 0;
-				right: 0;
-				cursor: pointer;
-				transition: transform 0.5s ease;
-			}
-			#s1:checked ~ #slide4, #s2:checked ~ #slide5,
-			#s3:checked ~ #slide1, #s4:checked ~ #slide2,
-			#s5:checked ~ #slide3{
-				box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
-				transform: translate3d(-30%,0,-200px);
-			}
-			#s1:checked ~ #slide5, #s2:checked ~ #slide1,
-			#s3:checked ~ #slide2, #s4:checked ~ #slide3,
-			#s5:checked ~ #slide4{
-				box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
-				transform: translate3d(-15%,0,-100px);
-			}
-			#s1:checked ~ #slide1, #s2:checked ~ #slide2,
-			#s3:checked ~ #slide3, #s4:checked ~ #slide4,
-			#s5:checked ~ #slide5{
-				box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19);
-				transform: translate3d(0,0,0);
-			}
-			#s1:checked ~ #slide2, #s2:checked ~ #slide3,
-			#s3:checked ~ #slide4, #s4:checked ~ #slide5,
-			#s5:checked ~ #slide1{
-				box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
-				transform: translate3d(15%,0,-100px);
-			}
-			#s1:checked ~ #slide3, #s2:checked ~ #slide4,
-			#s3:checked ~ #slide5, #s4:checked ~ #slide1,
-			#s5:checked ~ #slide2{
-				box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
-				transform: translate3d(30%,0,-200px);
-			}
-            
-            #slide1 { background: #00BCD4; } 
-            #slide2 { background: #4CAF50; } 
-            #slide3 { background: #CDDC39; } 
-            #slide4 { background: #FFC107; } 
-            #slide5 { background: #FF5722; }
-            
-		</style>             
+</script>
+            <style>* { margin: 0; padding: 0; } [type=radio] { display: none; } #s { height: 35vw; position: relative; perspective: 1000px; transform-style: preserve-3d; } #s label { margin: auto; width: 70%; height: 100%; border-radius: 4px; position: absolute; left: 0; right: 0; cursor: pointer; transition: transform 1s ease; } #s1:checked ~ #slide4, #s2:checked ~ #slide5, #s3:checked ~ #slide1, #s4:checked ~ #slide2, #s5:checked ~ #slide3 { box-shadow: 0 1px 4px 0 rgba(0,0,0,.37); transform: translate3d(-30%,0,-200px); } #s1:checked ~ #slide5, #s2:checked ~ #slide1, #s3:checked ~ #slide2, #s4:checked ~ #slide3, #s5:checked ~ #slide4 { box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2); transform: translate3d(-15%,0,-100px); } #s1:checked ~ #slide1, #s2:checked ~ #slide2, #s3:checked ~ #slide3, #s4:checked ~ #slide4, #s5:checked ~ #slide5 { box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19); transform: translate3d(0,0,0); } #s1:checked ~ #slide2, #s2:checked ~ #slide3, #s3:checked ~ #slide4, #s4:checked ~ #slide5, #s5:checked ~ #slide1 { box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2); transform: translate3d(15%,0,-100px); } #s1:checked ~ #slide3, #s2:checked ~ #slide4, #s3:checked ~ #slide5, #s4:checked ~ #slide1, #s5:checked ~ #slide2 { box-shadow: 0 1px 4px 0 rgba(0,0,0,.37); transform: translate3d(30%,0,-200px); } #slide1 { background: #00BCD4; } #slide2 { background: #4CAF50; } #slide3 { background: #CDDC39; } #slide4 { background: #FFC107; } #slide5 { background: #FF5722; }</style>
         </section>
         <br/>
         <section data-pg-name="contenido incrustado">
@@ -172,10 +110,46 @@ function autoSlide() {
         <br/>
         <div id="panels1" role="tablist" data-pg-name="contenido colapsado"> 
             <div class="card"> 
-                <div class="card-header" role="tab"> 
-                    <h5 class="mb-0 text-center"> <a class="collapsed font-weight-bold h4" data-toggle="collapse" href="#collapse2" aria-expanded="false" aria-controls="collapse2" style="color: #400019;">MAS CONTENIDO.</a> </h5> 
+                <div class="card-header" role="tab" style="background: linear-gradient(90deg, #093028, #237A57);"> 
+                    <h5 class="mb-0 text-center"> <a class="collapsed h4 text-white" data-toggle="collapse" href="#collapse2" aria-expanded="false" aria-controls="collapse2">Mas contenido.</a> </h5> 
                 </div>                 
                 <div id="collapse2" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#panels1"> 
+                    <section class="bg-light pb-5 pt-5 text-secondary" style="background: linear-gradient(90deg, #ADA996, #F2F2F2, #DBDBDB, #EAEAEA);">
+                        <div class="container"> 
+                            <div class="justify-content-center row"> 
+                                <div class="col-lg-4 col-md-6 pb-3 pt-3"> 
+                                    <div class="bg-white d-flex flex-column h-100 shadow"> 
+                                        <a href="#" class="d-block"><img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDJ8fHRyYXZlbHxlbnwwfHx8&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=700&h=480&fit=crop" class="img-fluid w-100"></a>
+                                        <div class="p-3"> 
+                                            <a href="#" class="text-dark text-decoration-none"><h5 class="font-weight-bold">Relaxing and observing the mountain reflection in a lake</h5></a>
+                                            <h6 class="font-weight-bold small text-secondary">10 August 2020</h6> 
+                                            <p class="mb-0">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p> 
+                                        </div>                                         
+                                    </div>                                     
+                                </div>                                 
+                                <div class="col-lg-4 col-md-6 pb-3 pt-3"> 
+                                    <div class="bg-white d-flex flex-column h-100 shadow"> 
+                                        <a href="#" class="d-block"><img src="https://images.unsplash.com/photo-1499363536502-87642509e31b?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDE2fHx0cmF2ZWx8ZW58MHx8fA&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=700&h=480&fit=crop" class="img-fluid w-100"></a>
+                                        <div class="p-3"> 
+                                            <a href="#" class="text-dark text-decoration-none"><h5 class="font-weight-bold">How to enjoy running your business?</h5></a>
+                                            <h6 class="font-weight-bold small text-secondary">10 August 2020</h6> 
+                                            <p class="mb-0">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p> 
+                                        </div>                                         
+                                    </div>                                     
+                                </div>                                 
+                                <div class="col-lg-4 col-md-6 pb-3 pt-3"> 
+                                    <div class="bg-white d-flex flex-column h-100 shadow"> 
+                                        <a href="#" class="d-block"><img src="https://images.unsplash.com/photo-1471506480208-91b3a4cc78be?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDUyfHx0cmF2ZWx8ZW58MHx8fA&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=700&h=480&fit=crop" class="img-fluid w-100"></a>
+                                        <div class="p-3"> 
+                                            <a href="#" class="text-dark text-decoration-none"><h5 class="font-weight-bold">How to notice colors when cycling over a mountain pass?</h5></a>
+                                            <h6 class="font-weight-bold small text-secondary">10 August 2020</h6> 
+                                            <p class="mb-0">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p> 
+                                        </div>                                         
+                                    </div>                                     
+                                </div>                                 
+                            </div>                             
+                        </div>                         
+                    </section>
                     <section class="bg-light pb-5 pt-5 text-secondary" style="background: linear-gradient(90deg, #ADA996, #F2F2F2, #DBDBDB, #EAEAEA);">
                         <div class="container"> 
                             <div class="justify-content-center row"> 
@@ -251,7 +225,7 @@ function autoSlide() {
                 </div>                 
             </div>             
         </div>
-        <footer class="bg-dark pt-5 text-white" style="background: -webkit-linear-gradient(90deg, rgb(255, 255, 255) 0.414938%, rgb(255, 255, 255) 2%, rgb(147, 35, 78) 24.4813%, rgb(106, 8, 46) 66.9087%, rgb(64, 0, 25) 100%);"> 
+        <footer class="bg-dark pt-5 text-white" style="background: linear-gradient(90deg, #093028, #237A57);"> 
             <div class="container"> 
                 <div class="row"> 
                     <div class="col-xl-4 mr-auto py-3"> 
