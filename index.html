@@ -102,7 +102,84 @@ function autoSlide() {
     }
     autoSlide();
 	</script>
-            <style>* { margin: 0; padding: 0; } [type=radio] { display: none; } #s { height: 40vw; position: relative; perspective: 1000px; transform-style: preserve-3d; } #s label { margin: auto; width: 70%; height: 100%; border-radius: 4px; position: absolute; left: 0; right: 0; cursor: pointer; transition: transform 1s ease; } #s1:checked ~ #slide4, #s2:checked ~ #slide5, 		#s3:checked ~ #slide1, #s4:checked ~ #slide2, 		#s5:checked ~ #slide3 { box-shadow: 0 1px 4px 0 rgba(0,0,0,.37); transform: translate3d(-30%,0,-200px); } #s1:checked ~ #slide5, #s2:checked ~ #slide1, 		#s3:checked ~ #slide2, #s4:checked ~ #slide3, 		#s5:checked ~ #slide4 { box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2); transform: translate3d(-15%,0,-100px); } #s1:checked ~ #slide1, #s2:checked ~ #slide2, 		#s3:checked ~ #slide3, #s4:checked ~ #slide4, 		#s5:checked ~ #slide5 { box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19); transform: translate3d(0,0,0); } #s1:checked ~ #slide2, #s2:checked ~ #slide3, 		#s3:checked ~ #slide4, #s4:checked ~ #slide5, 		#s5:checked ~ #slide1 { box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2); transform: translate3d(15%,0,-100px); } #s1:checked ~ #slide3, #s2:checked ~ #slide4, 		#s3:checked ~ #slide5, #s4:checked ~ #slide1, 		#s5:checked ~ #slide2 { box-shadow: 0 1px 4px 0 rgba(0,0,0,.37); transform: translate3d(30%,0,-200px); } #slide1 { background: #815563; } #slide2 { background: #815563; } #slide3 { background: #815563; } #slide4 { background: #815563; } #slide5 { background: #815563; }</style>             
+            <style>
+        *{
+			margin: 0;
+			padding: 0;
+		}
+		[type=radio] {
+			display: none;
+		}
+        
+		#s{
+			height: 40vw;
+			position: relative;
+			perspective: 1000px;
+			transform-style: preserve-3d;
+		}
+        
+		#s label{
+			margin: auto;
+			width: 70%;
+			height: 100%;
+			border-radius: 4px;
+			position: absolute;
+			left: 0;
+			right: 0;
+			cursor: pointer;
+			transition: transform 1s ease;
+		}
+        
+		#s1:checked ~ #slide4, #s2:checked ~ #slide5,
+		#s3:checked ~ #slide1, #s4:checked ~ #slide2,
+		#s5:checked ~ #slide3{
+			box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+            opacity: 85%;
+            padding: 1%;
+			transform: translate3d(-30%,0,-200px);
+		}
+        
+		#s1:checked ~ #slide5, #s2:checked ~ #slide1,
+		#s3:checked ~ #slide2, #s4:checked ~ #slide3,
+		#s5:checked ~ #slide4{
+			box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
+            opacity: 85%;
+            padding: 1%;
+			transform: translate3d(-15%,0,-100px);
+		}
+        
+		#s1:checked ~ #slide1, #s2:checked ~ #slide2,
+		#s3:checked ~ #slide3, #s4:checked ~ #slide4,
+		#s5:checked ~ #slide5{
+			box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19);
+			transform: translate3d(0,0,0);
+		}
+        
+		#s1:checked ~ #slide2, #s2:checked ~ #slide3,
+		#s3:checked ~ #slide4, #s4:checked ~ #slide5,
+		#s5:checked ~ #slide1{
+			box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
+            opacity: 85%;
+            padding: 1%;
+			transform: translate3d(15%,0,-100px);
+		}
+        
+		#s1:checked ~ #slide3, #s2:checked ~ #slide4,
+		#s3:checked ~ #slide5, #s4:checked ~ #slide1,
+		#s5:checked ~ #slide2{
+			box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+            opacity: 85%;
+            padding: 1%;
+			transform: translate3d(30%,0,-200px);
+		}
+        
+        #slide1 { background: #815563; } 
+        #slide2 { background: #815563; } 
+        #slide3 { background: #815563; } 
+        #slide4 { background: #815563; } 
+        #slide5 { background: #815563; }
+        
+    </style>             
         </section>
         <br/>
         <br/>
@@ -129,8 +206,8 @@ function autoSlide() {
                 <div class="card-header" role="tab"> 
                     <h5 class="mb-0 text-center"> <a class="collapsed font-weight-bold h4" data-toggle="collapse" href="#collapse2" aria-expanded="false" aria-controls="collapse2" style="color: #400019;">MAS CONTENIDO</a> </h5> 
                 </div>                 
-                <div id="collapse2" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#panels1"> 
-                    <section class="pb-5 pt-5 text-secondary" style="background-color: rgb(111,24,55);">
+                <div id="collapse2" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#panels1" style="background-color: rgb(111,24,55);"> 
+                    <section class="pb-5 pt-5 text-secondary">
                         <div class="container"> 
                             <div class="justify-content-center row"> 
                                 <div class="col-lg-4 col-md-6 pb-3 pt-3"> 
@@ -166,7 +243,7 @@ function autoSlide() {
                             </div>                             
                         </div>                         
                     </section>
-                    <section class="pb-5 pt-5 text-secondary" style="background-color: rgb(111,24,55);">
+                    <section class="pb-5 pt-5 text-secondary">
                         <div class="container"> 
                             <div class="justify-content-center row"> 
                                 <div class="col-lg-4 col-md-6 pb-3 pt-3"> 
@@ -205,7 +282,7 @@ function autoSlide() {
                 </div>                 
             </div>             
         </div>
-        <footer class="bg-dark pt-5 text-white" style="background: linear-gradient(0deg, rgb(55, 26, 37) 0%, rgb(111, 24, 55) 50%, rgb(64, 0, 25) 100%);"> 
+        <footer class="bg-dark pt-5 text-white" style="background: linear-gradient(0deg, rgb(119, 65, 85) 0%, rgb(111, 24, 55) 50%, rgb(64, 0, 25) 100%);"> 
             <div class="container"> 
                 <div class="row"> 
                     <div class="col-xl-4 mr-auto py-3"> 
