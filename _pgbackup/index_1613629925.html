@@ -13,19 +13,19 @@
         <link href="style.css" rel="stylesheet">
         <link rel="stylesheet" href="blocks.css">
     </head>
-    <body style="background-image: url('fondo_01.png'); background-color: rgba(64, 0, 25);" class="background-left-top">
+    <body style="background-image: url('fondo_01.png'); background-color: rgba(64, 0, 25); background-attachment: fixed;">
         <!-- Bootstrap core JavaScript
     ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
         <header> 
-            <nav class="bg-white navbar navbar-expand-lg navbar-light py-4 py-lg-2 text-uppercase"> 
+            <nav class="navbar navbar-dark navbar-expand-lg  py-4 py-lg-2 text-uppercase" style="background: -webkit-linear-gradient(90deg, rgb(125, 77, 31) 7.30622%, rgb(248, 224, 124) 100%);"> 
                 <div class="container"> 
-                    <img src="titulo_logo_01.png" width="80" style="margin-right: 10px;"> 
-                    <img src="titulo_texto_01.png" width="170" style="margin-top: 5px;">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown-12" aria-controls="navbarNavDropdown-12" aria-expanded="false" aria-label="Toggle navigation"> 
+                    <img src="titulo_logo_01.png" style="margin-right: 10px;" width="50"> 
+                    <img src="titulo_texto_01.png" style="margin-top: 0px;" width="100">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown-12" aria-controls="navbarNavDropdown-12" aria-expanded="false" aria-label="Toggle navigation" style="background-color: #b7842f;"> 
                         <span class="navbar-toggler-icon"></span> 
                     </button>                     
-                    <div class="collapse navbar-collapse " id="navbarNavDropdown-12"> 
+                    <div class="collapse font-weight-normal navbar-collapse text-center" id="navbarNavDropdown-12"> 
                         <ul class="ml-auto navbar-nav"> 
                             <li class="nav-item active"> 
                                 <a class="nav-link px-lg-3 py-lg-4" href="#">Home <span class="sr-only">(current)</span></a> 
@@ -53,7 +53,7 @@
             </nav>             
         </header>
         <section>
-            <img src="banner_01.png" width="100%">
+            <img src="banner_01.jpg" width="100%">
         </section>
         <br/>
         <section>
@@ -63,11 +63,21 @@
                 <input type="radio" name="s" id="s3">
                 <input type="radio" name="s" id="s4">
                 <input type="radio" name="s" id="s5">
-                <label for="s1" id="slide1"></label>
-                <label for="s2" id="slide2"></label>
-                <label for="s3" id="slide3"></label>
-                <label for="s4" id="slide4"></label>
-                <label for="s5" id="slide5"></label>
+                <label for="s1" id="slide1">
+                    <img src="imag_01.jpg" height="100%" width="100%" class="shadow">
+                </label>
+                <label for="s2" id="slide2">
+                    <img src="imag_02.jpg" height="100%" width="100%" class="shadow">
+                </label>
+                <label for="s3" id="slide3">
+                    <img src="imag_03.jpg" height="100%" width="100%" class="shadow">
+                </label>
+                <label for="s4" id="slide4">
+                    <img src="imag_04.jpg" height="100%" width="100%" class="shadow">
+                </label>
+                <label for="s5" id="slide5">
+                    <img src="imag_05.jpg" height="100%" width="100%" class="shadow">
+                </label>
             </section>
             <script>
     var n = 0;
@@ -79,7 +89,7 @@ function autoSlide() {
 
         document.getElementById("s").onmouseleave = function () {
             window.ev = false;
-            setTimeout(autoSlide, 6000);
+            setTimeout(autoSlide, 7000);
         };
 
         if (window.ev == false) {
@@ -87,84 +97,28 @@ function autoSlide() {
             if (n === 6)
                 n = 1;
             document.getElementById("s" + n).checked = true;
-            setTimeout(autoSlide, 6000);
+            setTimeout(autoSlide, 7000);
         }
     }
     autoSlide();
 	</script>
-            <style>
-			*{
-				margin: 0;
-				padding: 0;
-			}
-			[type=radio] {
-				display: none;
-			}
-			#s{
-				height: 40vw;
-				position: relative;
-				perspective: 1000px;
-				transform-style: preserve-3d;
-			}
-			#s label{
-				margin: auto;
-				width: 70%;
-				height: 100%;
-				border-radius: 4px;
-				position: absolute;
-				left: 0;
-				right: 0;
-				cursor: pointer;
-				transition: transform 0.5s ease;
-			}
-			#s1:checked ~ #slide4, #s2:checked ~ #slide5,
-			#s3:checked ~ #slide1, #s4:checked ~ #slide2,
-			#s5:checked ~ #slide3{
-				box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
-				transform: translate3d(-30%,0,-200px);
-			}
-			#s1:checked ~ #slide5, #s2:checked ~ #slide1,
-			#s3:checked ~ #slide2, #s4:checked ~ #slide3,
-			#s5:checked ~ #slide4{
-				box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
-				transform: translate3d(-15%,0,-100px);
-			}
-			#s1:checked ~ #slide1, #s2:checked ~ #slide2,
-			#s3:checked ~ #slide3, #s4:checked ~ #slide4,
-			#s5:checked ~ #slide5{
-				box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19);
-				transform: translate3d(0,0,0);
-			}
-			#s1:checked ~ #slide2, #s2:checked ~ #slide3,
-			#s3:checked ~ #slide4, #s4:checked ~ #slide5,
-			#s5:checked ~ #slide1{
-				box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
-				transform: translate3d(15%,0,-100px);
-			}
-			#s1:checked ~ #slide3, #s2:checked ~ #slide4,
-			#s3:checked ~ #slide5, #s4:checked ~ #slide1,
-			#s5:checked ~ #slide2{
-				box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
-				transform: translate3d(30%,0,-200px);
-			}
-            
-            #slide1 { background: #00BCD4; } 
-            #slide2 { background: #4CAF50; } 
-            #slide3 { background: #CDDC39; } 
-            #slide4 { background: #FFC107; } 
-            #slide5 { background: #FF5722; }
-            
-		</style>             
+            <style>* { margin: 0; padding: 0; } [type=radio] { display: none; } #s { height: 40vw; position: relative; perspective: 1000px; transform-style: preserve-3d; } #s label { margin: auto; width: 70%; height: 100%; border-radius: 4px; position: absolute; left: 0; right: 0; cursor: pointer; transition: transform 1s ease; } #s1:checked ~ #slide4, #s2:checked ~ #slide5, 		#s3:checked ~ #slide1, #s4:checked ~ #slide2, 		#s5:checked ~ #slide3 { box-shadow: 0 1px 4px 0 rgba(0,0,0,.37); transform: translate3d(-30%,0,-200px); } #s1:checked ~ #slide5, #s2:checked ~ #slide1, 		#s3:checked ~ #slide2, #s4:checked ~ #slide3, 		#s5:checked ~ #slide4 { box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2); transform: translate3d(-15%,0,-100px); } #s1:checked ~ #slide1, #s2:checked ~ #slide2, 		#s3:checked ~ #slide3, #s4:checked ~ #slide4, 		#s5:checked ~ #slide5 { box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19); transform: translate3d(0,0,0); } #s1:checked ~ #slide2, #s2:checked ~ #slide3, 		#s3:checked ~ #slide4, #s4:checked ~ #slide5, 		#s5:checked ~ #slide1 { box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2); transform: translate3d(15%,0,-100px); } #s1:checked ~ #slide3, #s2:checked ~ #slide4, 		#s3:checked ~ #slide5, #s4:checked ~ #slide1, 		#s5:checked ~ #slide2 { box-shadow: 0 1px 4px 0 rgba(0,0,0,.37); transform: translate3d(30%,0,-200px); } #slide1 { background: #815563; } #slide2 { background: #815563; } #slide3 { background: #815563; } #slide4 { background: #815563; } #slide5 { background: #815563; }</style>             
         </section>
         <br/>
+        <br/>
         <section data-pg-name="contenido incrustado">
-            <div class="container">
+            <div class="container" style="width: 95%;">
                 <div class="row">
                     <div class="col-md-6">
-                        <iframe height="300" src="https://www.youtube.com/embed/Ff4d82K1DJg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="grid-area:1 / 1 / 2 / 2;" width="100%" class="shadow"></iframe>                         
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe src="https://www.youtube.com/embed/Ff4d82K1DJg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="shadow" width="100%"></iframe>
+                        </div>
+                        <br/> 
                     </div>
                     <div class="col-md-6">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14372.271818798727!2d-103.277091!3d25.7683189!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x525dbdc834122d03!2sPresidencia%20Municipal%20Fco.%20I%20Madero!5e0!3m2!1ses-419!2smx!4v1613250211077!5m2!1ses-419!2smx" height="300" frameborder="0" style="border:0;grid-area:1 / 2 / 2 / 3;" allowfullscreen="" aria-hidden="false" tabindex="0" width="100%" class="shadow"></iframe>                         
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14372.271818798727!2d-103.277091!3d25.7683189!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x525dbdc834122d03!2sPresidencia%20Municipal%20Fco.%20I%20Madero!5e0!3m2!1ses-419!2smx!4v1613250211077!5m2!1ses-419!2smx" frameborder="0" style="border:0;grid-area:1 / 2 / 2 / 3;" allowfullscreen="" aria-hidden="false" tabindex="0" width="100%" class="shadow"></iframe>
+                        </div>                         
                     </div>
                 </div>
             </div>
@@ -173,10 +127,10 @@ function autoSlide() {
         <div id="panels1" role="tablist" data-pg-name="contenido colapsado"> 
             <div class="card"> 
                 <div class="card-header" role="tab"> 
-                    <h5 class="mb-0 text-center"> <a class="collapsed font-weight-bold h4" data-toggle="collapse" href="#collapse2" aria-expanded="false" aria-controls="collapse2" style="color: #400019;">MAS CONTENIDO.</a> </h5> 
+                    <h5 class="mb-0 text-center"> <a class="collapsed font-weight-bold h4" data-toggle="collapse" href="#collapse2" aria-expanded="false" aria-controls="collapse2" style="color: #400019;">MAS CONTENIDO</a> </h5> 
                 </div>                 
                 <div id="collapse2" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#panels1"> 
-                    <section class="bg-light pb-5 pt-5 text-secondary" style="background: linear-gradient(90deg, #ADA996, #F2F2F2, #DBDBDB, #EAEAEA);">
+                    <section class="pb-5 pt-5 text-secondary" style="background-color: rgb(111,24,55);">
                         <div class="container"> 
                             <div class="justify-content-center row"> 
                                 <div class="col-lg-4 col-md-6 pb-3 pt-3"> 
@@ -212,7 +166,7 @@ function autoSlide() {
                             </div>                             
                         </div>                         
                     </section>
-                    <section class="bg-light pb-5 pt-5 text-secondary" style="background: linear-gradient(90deg, #ADA996, #F2F2F2, #DBDBDB, #EAEAEA);">
+                    <section class="pb-5 pt-5 text-secondary" style="background-color: rgb(111,24,55);">
                         <div class="container"> 
                             <div class="justify-content-center row"> 
                                 <div class="col-lg-4 col-md-6 pb-3 pt-3"> 
@@ -247,20 +201,20 @@ function autoSlide() {
                                 </div>                                 
                             </div>                             
                         </div>                         
-                    </section>                     
+                    </section>
                 </div>                 
             </div>             
         </div>
-        <footer class="bg-dark pt-5 text-white" style="background: -webkit-linear-gradient(90deg, rgb(255, 255, 255) 0.414938%, rgb(255, 255, 255) 2%, rgb(147, 35, 78) 24.4813%, rgb(106, 8, 46) 66.9087%, rgb(64, 0, 25) 100%);"> 
+        <footer class="bg-dark pt-5 text-white" style="background: -webkit-linear-gradient(286deg, rgb(234, 21, 104) 0%, rgb(106, 8, 46) 51.7346%, rgb(64, 0, 25) 100%);"> 
             <div class="container"> 
                 <div class="row"> 
                     <div class="col-xl-4 mr-auto py-3"> 
-                        <a href="#" class="d-inline-block h2 mb-4 text-decoration-none text-uppercase text-white-50">                 Company </a> 
-                        <p class="mb-3">                                Duis pharetra venenatis felis, ut tincidunt ipsum consequat nec. Fusce et porttitor libero, eu aliquam nisi. Nam finibus ullamcorper semper.</p> 
-                        <div class="mb-4"> 
+                        <img src="footer_01.png" width="40%"/> 
+                        <p class="mb-3" style="width: 90%;">                                Duis pharetra venenatis felis, ut tincidunt ipsum consequat nec. Fusce et porttitor libero, eu aliquam nisi. Nam finibus ullamcorper semper.</p> 
+                        <div class="mb-4" style="width: 50%;"> 
                             <a href="#" class="text-white">+1 234 567-890</a> 
                             <br> 
-                            <a href="#" class="text-white">hello@fantico.com</a> 
+                            <a class="text-white" href="#">imagen_fco@hotmail.com</a> 
                         </div>                         
                         <div class="d-inline-flex flex-wrap"> 
                             <a href="#" class="p-1 text-white"> <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"> 
@@ -340,7 +294,7 @@ function autoSlide() {
                 </div>                 
                 <div class="pb-3 pt-3 text-center"> 
                     <hr class="border-secondary mt-0"> 
-                    <p class="mb-0">Copyright © 2020 Company Name</p> 
+                    <p class="mb-0">Ayuntamiento Municipal 2019 - 2021</p> 
                 </div>                 
             </div>             
         </footer>
