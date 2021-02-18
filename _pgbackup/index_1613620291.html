@@ -13,19 +13,19 @@
         <link href="style.css" rel="stylesheet">
         <link rel="stylesheet" href="blocks.css">
     </head>
-    <body style="background-image: url('fondo_01.png'); background-color: rgba(162, 131, 47, 0.6);">
+    <body style="background-image: url('fondo_01.png'); background-color: rgba(64, 0, 25);" class="background-left-top">
         <!-- Bootstrap core JavaScript
     ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
         <header> 
-            <nav class="navbar navbar-dark navbar-expand-lg py-4 py-lg-2 text-uppercase" style="background: linear-gradient(90deg, #000000, #434343);"> 
+            <nav class="navbar navbar-dark navbar-expand-lg  py-4 py-lg-2 text-uppercase" style="background: -webkit-linear-gradient(90deg, rgb(125, 77, 31) 7.30622%, rgb(248, 224, 124) 100%);"> 
                 <div class="container"> 
-                    <img src="titulo_logo_01.png" width="80" style="margin-right: 10px;"> 
-                    <img src="titulo_texto_01.png" width="170" style="margin-top: 5px;">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown-12" aria-controls="navbarNavDropdown-12" aria-expanded="false" aria-label="Toggle navigation"> 
+                    <img src="titulo_logo_01.png" style="margin-right: 10px;" width="50"> 
+                    <img src="titulo_texto_01.png" style="margin-top: 0px;" width="100">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown-12" aria-controls="navbarNavDropdown-12" aria-expanded="false" aria-label="Toggle navigation" style="background-color: #b7842f;"> 
                         <span class="navbar-toggler-icon"></span> 
                     </button>                     
-                    <div class="collapse navbar-collapse " id="navbarNavDropdown-12"> 
+                    <div class="collapse font-weight-normal navbar-collapse text-center" id="navbarNavDropdown-12"> 
                         <ul class="ml-auto navbar-nav"> 
                             <li class="nav-item active"> 
                                 <a class="nav-link px-lg-3 py-lg-4" href="#">Home <span class="sr-only">(current)</span></a> 
@@ -53,98 +53,63 @@
             </nav>             
         </header>
         <section>
-            <img src="banner_01.png" width="100%">
+            <img src="banner_01.jpg" width="100%">
         </section>
         <br/>
         <section>
-            <section id="slider">
-                <input type="radio" name="slider" id="s1">
-                <input type="radio" name="slider" id="s2">
-                <input type="radio" name="slider" id="s3" checked>
-                <input type="radio" name="slider" id="s4">
-                <input type="radio" name="slider" id="s5">
-                <label for="s1" id="slide1"></label>
-                <label for="s2" id="slide2"></label>
-                <label for="s3" id="slide3"></label>
-                <label for="s4" id="slide4"></label>
-                <label for="s5" id="slide5"></label>
+            <section id="s">
+                <input type="radio" name="s" id="s1" checked>
+                <input type="radio" name="s" id="s2">
+                <input type="radio" name="s" id="s3">
+                <input type="radio" name="s" id="s4">
+                <input type="radio" name="s" id="s5">
+                <label for="s1" id="slide1">
+                    <img src="imag_01.jpg" height="100%" width="100%" class="shadow">
+                </label>
+                <label for="s2" id="slide2">
+                    <img src="imag_02.jpg" height="100%" width="100%" class="shadow">
+                </label>
+                <label for="s3" id="slide3">
+                    <img src="imag_03.jpg" height="100%" width="100%" class="shadow">
+                </label>
+                <label for="s4" id="slide4">
+                    <img src="imag_04.jpg" height="100%" width="100%" class="shadow">
+                </label>
+                <label for="s5" id="slide5">
+                    <img src="imag_05.jpg" height="100%" width="100%" class="shadow">
+                </label>
             </section>
-            <style>
-    * {
-  margin: 0;
-  padding: 0;
-}
+            <script>
+    var n = 0;
+window.ev = false;
+function autoSlide() {
+        document.getElementById("s").onmouseenter = function () {
+            window.ev = true;
+        };
 
-[type=radio] {
-  display: none;
-}
+        document.getElementById("s").onmouseleave = function () {
+            window.ev = false;
+            setTimeout(autoSlide, 7000);
+        };
 
-#slider {
-  height: 35vw;
-  position: relative;
-  perspective: 1000px;
-  transform-style: preserve-3d;
-}
-
-#slider label {
-  margin: auto;
-  width: 70%;
-  height: 100%;
-  border-radius: 4px;
-  position: absolute;
-  left: 0; right: 0;
-  cursor: pointer;
-  transition: transform 0.4s ease;
-}
-
-#s1:checked ~ #slide4, #s2:checked ~ #slide5,
-#s3:checked ~ #slide1, #s4:checked ~ #slide2,
-#s5:checked ~ #slide3 {
-  box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
-  transform: translate3d(-30%,0,-200px);
-}
-
-#s1:checked ~ #slide5, #s2:checked ~ #slide1,
-#s3:checked ~ #slide2, #s4:checked ~ #slide3,
-#s5:checked ~ #slide4 {
-  box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
-  transform: translate3d(-15%,0,-100px);
-}
-
-#s1:checked ~ #slide1, #s2:checked ~ #slide2,
-#s3:checked ~ #slide3, #s4:checked ~ #slide4,
-#s5:checked ~ #slide5 {
-  box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19);
-  transform: translate3d(0,0,0);
-}
-
-#s1:checked ~ #slide2, #s2:checked ~ #slide3,
-#s3:checked ~ #slide4, #s4:checked ~ #slide5,
-#s5:checked ~ #slide1 {
-  box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
-  transform: translate3d(15%,0,-100px);
-}
-
-#s1:checked ~ #slide3, #s2:checked ~ #slide4,
-#s3:checked ~ #slide5, #s4:checked ~ #slide1,
-#s5:checked ~ #slide2 {
-  box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
-  transform: translate3d(30%,0,-200px);
-}
-
-#slide1 { background: #00BCD4 }
-#slide2 { background: #4CAF50 }
-#slide3 { background: #CDDC39 }
-#slide4 { background: #FFC107 }
-#slide5 { background: #FF5722 }
-    </style>
+        if (window.ev == false) {
+            n++;
+            if (n === 6)
+                n = 1;
+            document.getElementById("s" + n).checked = true;
+            setTimeout(autoSlide, 7000);
+        }
+    }
+    autoSlide();
+	</script>
+            <style>* { margin: 0; padding: 0; } [type=radio] { display: none; } #s { height: 40vw; position: relative; perspective: 1000px; transform-style: preserve-3d; } #s label { margin: auto; width: 70%; height: 100%; border-radius: 4px; position: absolute; left: 0; right: 0; cursor: pointer; transition: transform 1s ease; } #s1:checked ~ #slide4, #s2:checked ~ #slide5, 		#s3:checked ~ #slide1, #s4:checked ~ #slide2, 		#s5:checked ~ #slide3 { box-shadow: 0 1px 4px 0 rgba(0,0,0,.37); transform: translate3d(-30%,0,-200px); } #s1:checked ~ #slide5, #s2:checked ~ #slide1, 		#s3:checked ~ #slide2, #s4:checked ~ #slide3, 		#s5:checked ~ #slide4 { box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2); transform: translate3d(-15%,0,-100px); } #s1:checked ~ #slide1, #s2:checked ~ #slide2, 		#s3:checked ~ #slide3, #s4:checked ~ #slide4, 		#s5:checked ~ #slide5 { box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19); transform: translate3d(0,0,0); } #s1:checked ~ #slide2, #s2:checked ~ #slide3, 		#s3:checked ~ #slide4, #s4:checked ~ #slide5, 		#s5:checked ~ #slide1 { box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2); transform: translate3d(15%,0,-100px); } #s1:checked ~ #slide3, #s2:checked ~ #slide4, 		#s3:checked ~ #slide5, #s4:checked ~ #slide1, 		#s5:checked ~ #slide2 { box-shadow: 0 1px 4px 0 rgba(0,0,0,.37); transform: translate3d(30%,0,-200px); } #slide1 { background: #815563; } #slide2 { background: #815563; } #slide3 { background: #815563; } #slide4 { background: #815563; } #slide5 { background: #815563; }</style>             
         </section>
         <br/>
         <section data-pg-name="contenido incrustado">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <iframe height="300" src="https://www.youtube.com/embed/Ff4d82K1DJg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="grid-area:1 / 1 / 2 / 2;" width="100%" class="shadow"></iframe>                         
+                        <iframe src="https://www.youtube.com/embed/Ff4d82K1DJg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="grid-area:1 / 1 / 2 / 2;" width="100%" class="shadow" height="300"></iframe>                         
                     </div>
                     <div class="col-md-6">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14372.271818798727!2d-103.277091!3d25.7683189!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x525dbdc834122d03!2sPresidencia%20Municipal%20Fco.%20I%20Madero!5e0!3m2!1ses-419!2smx!4v1613250211077!5m2!1ses-419!2smx" height="300" frameborder="0" style="border:0;grid-area:1 / 2 / 2 / 3;" allowfullscreen="" aria-hidden="false" tabindex="0" width="100%" class="shadow"></iframe>                         
@@ -155,11 +120,11 @@
         <br/>
         <div id="panels1" role="tablist" data-pg-name="contenido colapsado"> 
             <div class="card"> 
-                <div class="card-header" role="tab" style="background: linear-gradient(90deg, #093028, #237A57);"> 
-                    <h5 class="mb-0 text-center"> <a class="collapsed h4 text-white" data-toggle="collapse" href="#collapse2" aria-expanded="false" aria-controls="collapse2">Mas contenido.</a> </h5> 
+                <div class="card-header" role="tab"> 
+                    <h5 class="mb-0 text-center"> <a class="collapsed font-weight-bold h4" data-toggle="collapse" href="#collapse2" aria-expanded="false" aria-controls="collapse2" style="color: #400019;">MAS CONTENIDO</a> </h5> 
                 </div>                 
                 <div id="collapse2" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#panels1"> 
-                    <section class="bg-light pb-5 pt-5 text-secondary" style="background: linear-gradient(90deg, #ADA996, #F2F2F2, #DBDBDB, #EAEAEA);">
+                    <section class="pb-5 pt-5 text-secondary" style="background-color: rgb(111,24,55);">
                         <div class="container"> 
                             <div class="justify-content-center row"> 
                                 <div class="col-lg-4 col-md-6 pb-3 pt-3"> 
@@ -195,7 +160,7 @@
                             </div>                             
                         </div>                         
                     </section>
-                    <section class="bg-light pb-5 pt-5 text-secondary" style="background: linear-gradient(90deg, #ADA996, #F2F2F2, #DBDBDB, #EAEAEA);">
+                    <section class="pb-5 pt-5 text-secondary" style="background-color: rgb(111,24,55);">
                         <div class="container"> 
                             <div class="justify-content-center row"> 
                                 <div class="col-lg-4 col-md-6 pb-3 pt-3"> 
@@ -231,55 +196,19 @@
                             </div>                             
                         </div>                         
                     </section>
-                    <section class="bg-light pb-5 pt-5 text-secondary" style="background: linear-gradient(90deg, #ADA996, #F2F2F2, #DBDBDB, #EAEAEA);">
-                        <div class="container"> 
-                            <div class="justify-content-center row"> 
-                                <div class="col-lg-4 col-md-6 pb-3 pt-3"> 
-                                    <div class="bg-white d-flex flex-column h-100 shadow"> 
-                                        <a href="#" class="d-block"><img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDJ8fHRyYXZlbHxlbnwwfHx8&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=700&h=480&fit=crop" class="img-fluid w-100"></a>
-                                        <div class="p-3"> 
-                                            <a href="#" class="text-dark text-decoration-none"><h5 class="font-weight-bold">Relaxing and observing the mountain reflection in a lake</h5></a>
-                                            <h6 class="font-weight-bold small text-secondary">10 August 2020</h6> 
-                                            <p class="mb-0">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p> 
-                                        </div>                                         
-                                    </div>                                     
-                                </div>                                 
-                                <div class="col-lg-4 col-md-6 pb-3 pt-3"> 
-                                    <div class="bg-white d-flex flex-column h-100 shadow"> 
-                                        <a href="#" class="d-block"><img src="https://images.unsplash.com/photo-1499363536502-87642509e31b?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDE2fHx0cmF2ZWx8ZW58MHx8fA&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=700&h=480&fit=crop" class="img-fluid w-100"></a>
-                                        <div class="p-3"> 
-                                            <a href="#" class="text-dark text-decoration-none"><h5 class="font-weight-bold">How to enjoy running your business?</h5></a>
-                                            <h6 class="font-weight-bold small text-secondary">10 August 2020</h6> 
-                                            <p class="mb-0">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p> 
-                                        </div>                                         
-                                    </div>                                     
-                                </div>                                 
-                                <div class="col-lg-4 col-md-6 pb-3 pt-3"> 
-                                    <div class="bg-white d-flex flex-column h-100 shadow"> 
-                                        <a href="#" class="d-block"><img src="https://images.unsplash.com/photo-1471506480208-91b3a4cc78be?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDUyfHx0cmF2ZWx8ZW58MHx8fA&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=700&h=480&fit=crop" class="img-fluid w-100"></a>
-                                        <div class="p-3"> 
-                                            <a href="#" class="text-dark text-decoration-none"><h5 class="font-weight-bold">How to notice colors when cycling over a mountain pass?</h5></a>
-                                            <h6 class="font-weight-bold small text-secondary">10 August 2020</h6> 
-                                            <p class="mb-0">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p> 
-                                        </div>                                         
-                                    </div>                                     
-                                </div>                                 
-                            </div>                             
-                        </div>                         
-                    </section>                     
                 </div>                 
             </div>             
         </div>
-        <footer class="bg-dark pt-5 text-white" style="background: linear-gradient(90deg, #093028, #237A57);"> 
+        <footer class="bg-dark pt-5 text-white" style="background: linear-gradient(150deg, rgb(216, 45, 112) 0%, rgb(106, 8, 46) 56%, rgb(64, 0, 25) 100%);"> 
             <div class="container"> 
                 <div class="row"> 
                     <div class="col-xl-4 mr-auto py-3"> 
-                        <a href="#" class="d-inline-block h2 mb-4 text-decoration-none text-uppercase text-white-50">                 Company </a> 
-                        <p class="mb-3">                                Duis pharetra venenatis felis, ut tincidunt ipsum consequat nec. Fusce et porttitor libero, eu aliquam nisi. Nam finibus ullamcorper semper.</p> 
-                        <div class="mb-4"> 
+                        <img src="file:///C:/Users/javie/OneDrive/Documentos/Paginas%20Web/Presidencia%20Municipal/Gaceta/footer_01.png" width="40%"/> 
+                        <p class="mb-3" style="width: 90%;">                                Duis pharetra venenatis felis, ut tincidunt ipsum consequat nec. Fusce et porttitor libero, eu aliquam nisi. Nam finibus ullamcorper semper.</p> 
+                        <div class="mb-4" style="width: 50%;"> 
                             <a href="#" class="text-white">+1 234 567-890</a> 
                             <br> 
-                            <a href="#" class="text-white">hello@fantico.com</a> 
+                            <a class="text-white" href="#">imagen_fco@hotmail.com</a> 
                         </div>                         
                         <div class="d-inline-flex flex-wrap"> 
                             <a href="#" class="p-1 text-white"> <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"> 
@@ -359,7 +288,7 @@
                 </div>                 
                 <div class="pb-3 pt-3 text-center"> 
                     <hr class="border-secondary mt-0"> 
-                    <p class="mb-0">Copyright © 2020 Company Name</p> 
+                    <p class="mb-0">Ayuntamiento Municipal 2019 - 2021</p> 
                 </div>                 
             </div>             
         </footer>
