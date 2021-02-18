@@ -13,7 +13,7 @@
         <link href="style.css" rel="stylesheet">
         <link rel="stylesheet" href="blocks.css">
     </head>
-    <body style="background-image: url('fondo_01.png'); background-color: rgba(64, 0, 25);" class="background-left-top">
+    <body style="background-image: url('fondo_01.png'); background-color: rgba(64, 0, 25); background-attachment: fixed;">
         <!-- Bootstrap core JavaScript
     ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
@@ -105,14 +105,20 @@ function autoSlide() {
             <style>* { margin: 0; padding: 0; } [type=radio] { display: none; } #s { height: 40vw; position: relative; perspective: 1000px; transform-style: preserve-3d; } #s label { margin: auto; width: 70%; height: 100%; border-radius: 4px; position: absolute; left: 0; right: 0; cursor: pointer; transition: transform 1s ease; } #s1:checked ~ #slide4, #s2:checked ~ #slide5, 		#s3:checked ~ #slide1, #s4:checked ~ #slide2, 		#s5:checked ~ #slide3 { box-shadow: 0 1px 4px 0 rgba(0,0,0,.37); transform: translate3d(-30%,0,-200px); } #s1:checked ~ #slide5, #s2:checked ~ #slide1, 		#s3:checked ~ #slide2, #s4:checked ~ #slide3, 		#s5:checked ~ #slide4 { box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2); transform: translate3d(-15%,0,-100px); } #s1:checked ~ #slide1, #s2:checked ~ #slide2, 		#s3:checked ~ #slide3, #s4:checked ~ #slide4, 		#s5:checked ~ #slide5 { box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19); transform: translate3d(0,0,0); } #s1:checked ~ #slide2, #s2:checked ~ #slide3, 		#s3:checked ~ #slide4, #s4:checked ~ #slide5, 		#s5:checked ~ #slide1 { box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2); transform: translate3d(15%,0,-100px); } #s1:checked ~ #slide3, #s2:checked ~ #slide4, 		#s3:checked ~ #slide5, #s4:checked ~ #slide1, 		#s5:checked ~ #slide2 { box-shadow: 0 1px 4px 0 rgba(0,0,0,.37); transform: translate3d(30%,0,-200px); } #slide1 { background: #815563; } #slide2 { background: #815563; } #slide3 { background: #815563; } #slide4 { background: #815563; } #slide5 { background: #815563; }</style>             
         </section>
         <br/>
+        <br/>
         <section data-pg-name="contenido incrustado">
-            <div class="container">
+            <div class="container" style="width: 85%;">
                 <div class="row">
                     <div class="col-md-6">
-                        <iframe src="https://www.youtube.com/embed/Ff4d82K1DJg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="grid-area:1 / 1 / 2 / 2;" width="100%" class="shadow" height="300"></iframe>                         
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe src="https://www.youtube.com/embed/Ff4d82K1DJg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="shadow" width="100%"></iframe>
+                        </div>
+                        <br/> 
                     </div>
                     <div class="col-md-6">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14372.271818798727!2d-103.277091!3d25.7683189!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x525dbdc834122d03!2sPresidencia%20Municipal%20Fco.%20I%20Madero!5e0!3m2!1ses-419!2smx!4v1613250211077!5m2!1ses-419!2smx" height="300" frameborder="0" style="border:0;grid-area:1 / 2 / 2 / 3;" allowfullscreen="" aria-hidden="false" tabindex="0" width="100%" class="shadow"></iframe>                         
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14372.271818798727!2d-103.277091!3d25.7683189!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x525dbdc834122d03!2sPresidencia%20Municipal%20Fco.%20I%20Madero!5e0!3m2!1ses-419!2smx!4v1613250211077!5m2!1ses-419!2smx" frameborder="0" style="border:0;grid-area:1 / 2 / 2 / 3;" allowfullscreen="" aria-hidden="false" tabindex="0" width="100%" class="shadow"></iframe>
+                        </div>                         
                     </div>
                 </div>
             </div>
