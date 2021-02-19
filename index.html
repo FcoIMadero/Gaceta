@@ -64,19 +64,24 @@
                 <input type="radio" name="s" id="s4">
                 <input type="radio" name="s" id="s5">
                 <label for="s1" id="slide1">
-                    <img src="imag_01.jpg" height="100%" width="100%" class="shadow">
+                    <img height="100%" width="100%" class="shadow" src="https://images.unsplash.com/photo-1537222961176-50d25fff78ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMDkyMnwwfDF8c2VhcmNofDF8fG1leGljb3xlbnwwfHx8&ixlib=rb-1.2.1&q=80&w=1080">
+                    <a href="https://jovenesconstruyendoelfuturo.stps.gob.mx/"><label style="width: 80%;"></label></a>
                 </label>
                 <label for="s2" id="slide2">
-                    <img src="imag_02.jpg" height="100%" width="100%" class="shadow">
+                    <img src="https://images.unsplash.com/photo-1473726867722-6b8a5e529d76?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMDkyMnwwfDF8c2VhcmNofDI0fHxtZXhpY298ZW58MHx8fA&ixlib=rb-1.2.1&q=80&w=1080" height="100%" width="100%" class="shadow">
+                    <a href="https://jovenesconstruyendoelfuturo.stps.gob.mx/"><label style="width: 80%;"></label></a>
                 </label>
                 <label for="s3" id="slide3">
-                    <img src="imag_03.jpg" height="100%" width="100%" class="shadow">
+                    <img src="https://images.unsplash.com/photo-1535159530326-d7bf54bfb24e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMDkyMnwwfDF8c2VhcmNofDEyfHxtZXhpY298ZW58MHx8fA&ixlib=rb-1.2.1&q=80&w=1080" height="100%" width="100%" class="shadow">
+                    <a href="https://jovenesconstruyendoelfuturo.stps.gob.mx/"><label style="width: 80%;"></label></a>
                 </label>
                 <label for="s4" id="slide4">
-                    <img src="imag_04.jpg" height="100%" width="100%" class="shadow">
+                    <img src="https://images.unsplash.com/photo-1524158637050-36b68ca9a5ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMDkyMnwwfDF8c2VhcmNofDE3fHxtZXhpY298ZW58MHx8fA&ixlib=rb-1.2.1&q=80&w=1080" height="100%" width="100%" class="shadow">
+                    <a href="https://jovenesconstruyendoelfuturo.stps.gob.mx/"><label style="width: 80%;"></label></a>
                 </label>
                 <label for="s5" id="slide5">
-                    <img src="imag_05.jpg" height="100%" width="100%" class="shadow">
+                    <img src="https://images.unsplash.com/photo-1472152927797-c4d1e52ef089?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMDkyMnwwfDF8c2VhcmNofDI2fHxtZXhpY298ZW58MHx8fA&ixlib=rb-1.2.1&q=80&w=1080" height="100%" width="100%" class="shadow">
+                    <a href="https://jovenesconstruyendoelfuturo.stps.gob.mx/"><label style="width: 80%;"></label></a>
                 </label>
             </section>
             <script>
@@ -102,84 +107,7 @@ function autoSlide() {
     }
     autoSlide();
 	</script>
-            <style>
-        *{
-			margin: 0;
-			padding: 0;
-		}
-		[type=radio] {
-			display: none;
-		}
-        
-		#s{
-			height: 40vw;
-			position: relative;
-			perspective: 1000px;
-			transform-style: preserve-3d;
-		}
-        
-		#s label{
-			margin: auto;
-			width: 70%;
-			height: 100%;
-			border-radius: 4px;
-			position: absolute;
-			left: 0;
-			right: 0;
-			cursor: pointer;
-			transition: transform 1s ease;
-		}
-        
-		#s1:checked ~ #slide4, #s2:checked ~ #slide5,
-		#s3:checked ~ #slide1, #s4:checked ~ #slide2,
-		#s5:checked ~ #slide3{
-			box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
-            opacity: 85%;
-            padding: 1%;
-			transform: translate3d(-30%,0,-200px);
-		}
-        
-		#s1:checked ~ #slide5, #s2:checked ~ #slide1,
-		#s3:checked ~ #slide2, #s4:checked ~ #slide3,
-		#s5:checked ~ #slide4{
-			box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
-            opacity: 85%;
-            padding: 1%;
-			transform: translate3d(-15%,0,-100px);
-		}
-        
-		#s1:checked ~ #slide1, #s2:checked ~ #slide2,
-		#s3:checked ~ #slide3, #s4:checked ~ #slide4,
-		#s5:checked ~ #slide5{
-			box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19);
-			transform: translate3d(0,0,0);
-		}
-        
-		#s1:checked ~ #slide2, #s2:checked ~ #slide3,
-		#s3:checked ~ #slide4, #s4:checked ~ #slide5,
-		#s5:checked ~ #slide1{
-			box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
-            opacity: 85%;
-            padding: 1%;
-			transform: translate3d(15%,0,-100px);
-		}
-        
-		#s1:checked ~ #slide3, #s2:checked ~ #slide4,
-		#s3:checked ~ #slide5, #s4:checked ~ #slide1,
-		#s5:checked ~ #slide2{
-			box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
-            opacity: 85%;
-            padding: 1%;
-			transform: translate3d(30%,0,-200px);
-		}
-        
-        #slide1 { background: #815563; } 
-        #slide2 { background: #815563; } 
-        #slide3 { background: #815563; } 
-        #slide4 { background: #815563; } 
-        #slide5 { background: #815563; }
-        
-    </style>             
+            <style>* { margin: 0; padding: 0; } [type=radio] { display: none; } #s { height: 40vw; position: relative; perspective: 1000px; transform-style: preserve-3d; } #s label { margin: auto; width: 70%; height: 100%; border-radius: 4px; position: absolute; left: 0; right: 0; cursor: pointer; transition: transform 1s ease; } #s1:checked ~ #slide4, #s2:checked ~ #slide5, 		#s3:checked ~ #slide1, #s4:checked ~ #slide2, 		#s5:checked ~ #slide3 { box-shadow: 0 1px 4px 0 rgba(0,0,0,.37); opacity: 85%; padding: 1%; transform: translate3d(-30%,0,-200px); } #s1:checked ~ #slide5, #s2:checked ~ #slide1, 		#s3:checked ~ #slide2, #s4:checked ~ #slide3, 		#s5:checked ~ #slide4 { box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2); opacity: 85%; padding: 1%; transform: translate3d(-15%,0,-100px); } #s1:checked ~ #slide1, #s2:checked ~ #slide2, 		#s3:checked ~ #slide3, #s4:checked ~ #slide4, 		#s5:checked ~ #slide5 { box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19); transform: translate3d(0,0,0); } #s1:checked ~ #slide2, #s2:checked ~ #slide3, 		#s3:checked ~ #slide4, #s4:checked ~ #slide5, 		#s5:checked ~ #slide1 { box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2); opacity: 85%; padding: 1%; transform: translate3d(15%,0,-100px); } #s1:checked ~ #slide3, #s2:checked ~ #slide4, 		#s3:checked ~ #slide5, #s4:checked ~ #slide1, 		#s5:checked ~ #slide2 { box-shadow: 0 1px 4px 0 rgba(0,0,0,.37); opacity: 85%; padding: 1%; transform: translate3d(30%,0,-200px); } #slide1 { background: #815563; } #slide2 { background: #815563; } #slide3 { background: #815563; } #slide4 { background: #815563; } #slide5 { background: #815563; }</style>             
         </section>
         <br/>
         <br/>
