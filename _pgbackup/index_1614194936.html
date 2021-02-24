@@ -18,7 +18,7 @@
     ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
         <header> 
-            <nav class="navbar navbar-dark navbar-expand-lg  py-4 py-lg-2 text-uppercase" style="background: -webkit-linear-gradient(90deg, rgb(125, 77, 31) 7.30622%, rgb(248, 224, 124) 100%);"> 
+            <nav class="navbar navbar-dark navbar-expand-lg  py-4 py-lg-2 text-uppercase" style="background: -webkit-linear-gradient(90deg, #7d4d1f 7.30622%, #f8e07c 100%);"> 
                 <div class="container"> 
                     <img src="titulo_logo_01.png" style="margin-right: 10px;" width="50"> 
                     <img src="titulo_texto_01.png" style="margin-top: 0px;" width="100">
@@ -64,19 +64,24 @@
                 <input type="radio" name="s" id="s4">
                 <input type="radio" name="s" id="s5">
                 <label for="s1" id="slide1">
-                    <img src="imag_01.jpg" height="100%" width="100%" class="shadow">
+                    <img height="100%" width="100%" class="shadow" src="https://images.unsplash.com/photo-1537222961176-50d25fff78ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMDkyMnwwfDF8c2VhcmNofDF8fG1leGljb3xlbnwwfHx8&ixlib=rb-1.2.1&q=80&w=1080">
+                    <a href="https://jovenesconstruyendoelfuturo.stps.gob.mx/"><label style="width: 80%;"></label></a>
                 </label>
                 <label for="s2" id="slide2">
-                    <img src="imag_02.jpg" height="100%" width="100%" class="shadow">
+                    <img src="https://images.unsplash.com/photo-1473726867722-6b8a5e529d76?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMDkyMnwwfDF8c2VhcmNofDI0fHxtZXhpY298ZW58MHx8fA&ixlib=rb-1.2.1&q=80&w=1080" height="100%" width="100%" class="shadow">
+                    <a href="https://jovenesconstruyendoelfuturo.stps.gob.mx/"><label style="width: 80%;"></label></a>
                 </label>
                 <label for="s3" id="slide3">
-                    <img src="imag_03.jpg" height="100%" width="100%" class="shadow">
+                    <img src="https://images.unsplash.com/photo-1535159530326-d7bf54bfb24e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMDkyMnwwfDF8c2VhcmNofDEyfHxtZXhpY298ZW58MHx8fA&ixlib=rb-1.2.1&q=80&w=1080" height="100%" width="100%" class="shadow">
+                    <a href="https://jovenesconstruyendoelfuturo.stps.gob.mx/"><label style="width: 80%;"></label></a>
                 </label>
                 <label for="s4" id="slide4">
-                    <img src="imag_04.jpg" height="100%" width="100%" class="shadow">
+                    <img src="https://images.unsplash.com/photo-1524158637050-36b68ca9a5ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMDkyMnwwfDF8c2VhcmNofDE3fHxtZXhpY298ZW58MHx8fA&ixlib=rb-1.2.1&q=80&w=1080" height="100%" width="100%" class="shadow">
+                    <a href="https://jovenesconstruyendoelfuturo.stps.gob.mx/"><label style="width: 80%;"></label></a>
                 </label>
                 <label for="s5" id="slide5">
-                    <img src="imag_05.jpg" height="100%" width="100%" class="shadow">
+                    <img src="https://images.unsplash.com/photo-1472152927797-c4d1e52ef089?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMDkyMnwwfDF8c2VhcmNofDI2fHxtZXhpY298ZW58MHx8fA&ixlib=rb-1.2.1&q=80&w=1080" height="100%" width="100%" class="shadow">
+                    <a href="https://jovenesconstruyendoelfuturo.stps.gob.mx/"><label style="width: 80%;"></label></a>
                 </label>
             </section>
             <script>
@@ -102,115 +107,109 @@ function autoSlide() {
     }
     autoSlide();
 	</script>
-            <style>* { margin: 0; padding: 0; } [type=radio] { display: none; } #s { height: 40vw; position: relative; perspective: 1000px; transform-style: preserve-3d; } #s label { margin: auto; width: 70%; height: 100%; border-radius: 4px; position: absolute; left: 0; right: 0; cursor: pointer; transition: transform 1s ease; } #s1:checked ~ #slide4, #s2:checked ~ #slide5, 		#s3:checked ~ #slide1, #s4:checked ~ #slide2, 		#s5:checked ~ #slide3 { box-shadow: 0 1px 4px 0 rgba(0,0,0,.37); transform: translate3d(-30%,0,-200px); } #s1:checked ~ #slide5, #s2:checked ~ #slide1, 		#s3:checked ~ #slide2, #s4:checked ~ #slide3, 		#s5:checked ~ #slide4 { box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2); transform: translate3d(-15%,0,-100px); } #s1:checked ~ #slide1, #s2:checked ~ #slide2, 		#s3:checked ~ #slide3, #s4:checked ~ #slide4, 		#s5:checked ~ #slide5 { box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19); transform: translate3d(0,0,0); } #s1:checked ~ #slide2, #s2:checked ~ #slide3, 		#s3:checked ~ #slide4, #s4:checked ~ #slide5, 		#s5:checked ~ #slide1 { box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2); transform: translate3d(15%,0,-100px); } #s1:checked ~ #slide3, #s2:checked ~ #slide4, 		#s3:checked ~ #slide5, #s4:checked ~ #slide1, 		#s5:checked ~ #slide2 { box-shadow: 0 1px 4px 0 rgba(0,0,0,.37); transform: translate3d(30%,0,-200px); } #slide1 { background: #815563; } #slide2 { background: #815563; } #slide3 { background: #815563; } #slide4 { background: #815563; } #slide5 { background: #815563; }</style>             
+            <style>* { margin: 0; padding: 0; } [type=radio] { display: none; } #s { height: 40vw; position: relative; perspective: 1000px; transform-style: preserve-3d; } #s label { margin: auto; width: 70%; height: 100%; border-radius: 4px; position: absolute; left: 0; right: 0; cursor: pointer; transition: transform 1s ease; } #s1:checked ~ #slide4, #s2:checked ~ #slide5, 		#s3:checked ~ #slide1, #s4:checked ~ #slide2, 		#s5:checked ~ #slide3 { box-shadow: 0 1px 4px 0 rgba(0,0,0,.37); opacity: 70%; padding: 2%; transform: translate3d(-30%,0,-200px); } #s1:checked ~ #slide5, #s2:checked ~ #slide1, 		#s3:checked ~ #slide2, #s4:checked ~ #slide3, 		#s5:checked ~ #slide4 { box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2); opacity: 70%; padding: 2%; transform: translate3d(-15%,0,-100px); } #s1:checked ~ #slide1, #s2:checked ~ #slide2, 		#s3:checked ~ #slide3, #s4:checked ~ #slide4, 		#s5:checked ~ #slide5 { box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19); transform: translate3d(0,0,0); } #s1:checked ~ #slide2, #s2:checked ~ #slide3, 		#s3:checked ~ #slide4, #s4:checked ~ #slide5, 		#s5:checked ~ #slide1 { box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2); opacity: 70%; padding: 2%; transform: translate3d(15%,0,-100px); } #s1:checked ~ #slide3, #s2:checked ~ #slide4, 		#s3:checked ~ #slide5, #s4:checked ~ #slide1, 		#s5:checked ~ #slide2 { box-shadow: 0 1px 4px 0 rgba(0,0,0,.37); opacity: 70%; padding: 2%; transform: translate3d(30%,0,-200px); } #slide1 { background: #815563; } #slide2 { background: #815563; } #slide3 { background: #815563; } #slide4 { background: #815563; } #slide5 { background: #815563; }</style>             
         </section>
         <br/>
         <br/>
         <section data-pg-name="contenido incrustado">
             <div class="container" style="width: 95%;">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-7">
                         <div class="embed-responsive embed-responsive-16by9">
                             <iframe src="https://www.youtube.com/embed/Ff4d82K1DJg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="shadow" width="100%"></iframe>
                         </div>
                         <br/> 
                     </div>
-                    <div class="col-md-6">
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14372.271818798727!2d-103.277091!3d25.7683189!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x525dbdc834122d03!2sPresidencia%20Municipal%20Fco.%20I%20Madero!5e0!3m2!1ses-419!2smx!4v1613250211077!5m2!1ses-419!2smx" frameborder="0" style="border:0;grid-area:1 / 2 / 2 / 3;" allowfullscreen="" aria-hidden="false" tabindex="0" width="100%" class="shadow"></iframe>
+                    <div class="col-md-5">
+                        <div class="embed-responsive embed-responsive-4by3">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14372.271818798727!2d-103.277091!3d25.7683189!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x525dbdc834122d03!2sPresidencia%20Municipal%20Fco.%20I%20Madero!5e0!3m2!1ses-419!2smx!4v1613250211077!5m2!1ses-419!2smx" frameborder="0" style="border:0;grid-area:1 / 2 / 2 / 3;" allowfullscreen="" aria-hidden="false" tabindex="0" class="shadow" width="100%"></iframe>
+                            <br/>
                         </div>                         
                     </div>
                 </div>
             </div>
         </section>
         <br/>
+        <section style="display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto;">
+            <div class="container" style="grid-area:1 / 1 / 2 / 2;">
+                <div class="row" style="grid-area: 1 / 1 / 2 / 2;">
+                    <div class="align-items-center background-cover col-md d-flex embed-responsive embed-responsive-4by3 text-center" style=" background-color: #f8e07c;grid-area:1 / 1 / 2 / 2;background-image:url('https://images.unsplash.com/photo-1551714179-80d2898ee5d6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMDkyMnwwfDF8c2VhcmNofDF8fHNwb3J0JTIweWFyZHxlbnwwfHx8&ixlib=rb-1.2.1&q=80&w=1080');" id="card1">
+                        <div class="container">
+                            <h6 class="font-weight-bold text-uppercase text-white">Deportiva municipal.</h6>
+                        </div>
+                        <style>#card1 { background-blend-mode: multiply; } #card1:hover { background-blend-mode: normal ; text-shadow: -1px 1px 0 #7d4d1f, 1px 1px 0 #7d4d1f,1px -1px 0 #7d4d1f,-1px -1px 0 #7d4d1f; }</style>
+                    </div>
+                    <div class="align-items-center background-cover col-md d-flex embed-responsive embed-responsive-4by3 text-center" style=" background-color: #f8e07c;grid-area:1 / 1 / 2 / 2;background-image:url('https://images.unsplash.com/photo-1507325670434-aa8da9a9626c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMDkyMnwwfDF8c2VhcmNofDE1fHxkZXNrfGVufDB8fHw&ixlib=rb-1.2.1&q=80&w=1080');" id="card2">
+                        <div class="container">
+                            <h6 class="font-weight-bold text-uppercase text-white">LA CUEVA.</h6>
+                        </div>
+                        <style>#card2 { background-blend-mode: multiply; } #card2:hover { background-blend-mode: normal; text-shadow: -1px 1px 0 #7d4d1f, 1px 1px 0 #7d4d1f,1px -1px 0 #7d4d1f,-1px -1px 0 #7d4d1f; }</style>
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="grid-area:1 / 2 / 2 / 3;">
+                <div class="row" style="grid-area: 1 / 1 / 2 / 2;">
+                    <div class="align-items-center background-cover col-md d-flex embed-responsive embed-responsive-4by3 text-center" style=" background-color: #f8e07c;grid-area:1 / 1 / 2 / 2;background-image:url('https://images.unsplash.com/photo-1554435493-93422e8220c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMDkyMnwwfDF8c2VhcmNofDJ8fGJ1aWxkaW5nfGVufDB8fHw&ixlib=rb-1.2.1&q=80&w=1080');" id="card3">
+                        <div class="container">
+                            <h6 class="font-weight-bold text-uppercase text-white">Presidencia Municipal.</h6>
+                        </div>
+                        <style>#card3 { background-blend-mode: multiply; } #card3:hover { background-blend-mode: normal; text-shadow: -1px 1px 0 #7d4d1f, 1px 1px 0 #7d4d1f,1px -1px 0 #7d4d1f,-1px -1px 0 #7d4d1f; }</style>
+                    </div>
+                    <div class="align-items-center background-cover col-md d-flex embed-responsive embed-responsive-4by3 text-center" style=" background-color: #f8e07c;grid-area:1 / 1 / 2 / 2;background-image:url('https://images.unsplash.com/photo-1586773860418-d37222d8fce3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMDkyMnwwfDF8c2VhcmNofDl8fGhvc3BpdGFsfGVufDB8fHw&ixlib=rb-1.2.1&q=80&w=1080');" id="card4">
+                        <div class="container">
+                            <h6 class="font-weight-bold text-uppercase text-white">DIF MADERO.</h6>
+                        </div>
+                        <style>#card4 { background-blend-mode: multiply; } #card4:hover { background-blend-mode: normal; text-shadow: -1px 1px 0 #7d4d1f, 1px 1px 0 #7d4d1f,1px -1px 0 #7d4d1f,-1px -1px 0 #7d4d1f; }</style>
+                    </div>
+                </div>
+            </div>
+        </section>
         <div id="panels1" role="tablist" data-pg-name="contenido colapsado"> 
             <div class="card"> 
                 <div class="card-header" role="tab"> 
                     <h5 class="mb-0 text-center"> <a class="collapsed font-weight-bold h4" data-toggle="collapse" href="#collapse2" aria-expanded="false" aria-controls="collapse2" style="color: #400019;">MAS CONTENIDO</a> </h5> 
                 </div>                 
-                <div id="collapse2" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#panels1"> 
-                    <section class="pb-5 pt-5 text-secondary" style="background-color: rgb(111,24,55);">
-                        <div class="container"> 
-                            <div class="justify-content-center row"> 
-                                <div class="col-lg-4 col-md-6 pb-3 pt-3"> 
-                                    <div class="bg-white d-flex flex-column h-100 shadow"> 
-                                        <a href="#" class="d-block"><img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDJ8fHRyYXZlbHxlbnwwfHx8&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=700&h=480&fit=crop" class="img-fluid w-100"></a>
-                                        <div class="p-3"> 
-                                            <a href="#" class="text-dark text-decoration-none"><h5 class="font-weight-bold">Relaxing and observing the mountain reflection in a lake</h5></a>
-                                            <h6 class="font-weight-bold small text-secondary">10 August 2020</h6> 
-                                            <p class="mb-0">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p> 
-                                        </div>                                         
-                                    </div>                                     
-                                </div>                                 
-                                <div class="col-lg-4 col-md-6 pb-3 pt-3"> 
-                                    <div class="bg-white d-flex flex-column h-100 shadow"> 
-                                        <a href="#" class="d-block"><img src="https://images.unsplash.com/photo-1499363536502-87642509e31b?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDE2fHx0cmF2ZWx8ZW58MHx8fA&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=700&h=480&fit=crop" class="img-fluid w-100"></a>
-                                        <div class="p-3"> 
-                                            <a href="#" class="text-dark text-decoration-none"><h5 class="font-weight-bold">How to enjoy running your business?</h5></a>
-                                            <h6 class="font-weight-bold small text-secondary">10 August 2020</h6> 
-                                            <p class="mb-0">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p> 
-                                        </div>                                         
-                                    </div>                                     
-                                </div>                                 
-                                <div class="col-lg-4 col-md-6 pb-3 pt-3"> 
-                                    <div class="bg-white d-flex flex-column h-100 shadow"> 
-                                        <a href="#" class="d-block"><img src="https://images.unsplash.com/photo-1471506480208-91b3a4cc78be?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDUyfHx0cmF2ZWx8ZW58MHx8fA&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=700&h=480&fit=crop" class="img-fluid w-100"></a>
-                                        <div class="p-3"> 
-                                            <a href="#" class="text-dark text-decoration-none"><h5 class="font-weight-bold">How to notice colors when cycling over a mountain pass?</h5></a>
-                                            <h6 class="font-weight-bold small text-secondary">10 August 2020</h6> 
-                                            <p class="mb-0">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p> 
-                                        </div>                                         
-                                    </div>                                     
-                                </div>                                 
-                            </div>                             
-                        </div>                         
+                <div id="collapse2" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#panels1" style="background-color: #6f1837;"> 
+                    <br/>
+                    <section data-pg-name="Noticia">
+                        <div class="container">
+                            <div class="accordion" id="accordionExample">
+                                <div class="card" style="border-radius: 25px;" id="nota1">
+                                    <div class="card-header" id="headingTwo">
+                                        <div class="row">
+                                            <div class="col col-lg-6 col-md col-sm col-xl-4">
+                                                <label class="background-cover embed-responsive embed-responsive-4by3" style="border-radius: 15px; background-image: url('https://images.unsplash.com/photo-1499529112087-3cb3b73cec95?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMDkyMnwwfDF8c2VhcmNofDR8fGZhcm18ZW58MHx8fA&ixlib=rb-1.2.1&q=80&w=1080'); margin-top: 5px; margin-bottom: 5px;" id="nota_photo01">
+</label>                                                 
+                                            </div>
+                                            <div class="align-items-center col-auto col-lg-6 col-md-auto col-sm-auto col-xl-8 d-flex">
+                                                <div style="margin-right: 10px; margin-left: 10px;">
+                                                    <h3>Column title</h3>
+                                                    <p class="text-justify">es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esenci</p>
+                                                    <h2 class="mb-0"> <button class="btn btn-lg btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Leer más.....</button> </h2>
+                                                </div>                                                 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <p class="text-justify" style="margin-right: 10px; margin-left: 10px;">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                                        </div>
+                                    </div>
+                                    <style>#nota1 { background-color: #eaeaea; border-radius: 20px; box-shadow: 7px 7px 1px #6f1837; transition: 0.1s ease; } #nota1:hover { background-color: #ffffff; border-radius: 20px; box-shadow: 7px 7px 1px #835969; transform: translate3d(-5px,-5px,0); transition: 0.1s ease; }</style>
+                                </div>
+                            </div>
+                        </div>
                     </section>
-                    <section class="pb-5 pt-5 text-secondary" style="background-color: rgb(111,24,55);">
-                        <div class="container"> 
-                            <div class="justify-content-center row"> 
-                                <div class="col-lg-4 col-md-6 pb-3 pt-3"> 
-                                    <div class="bg-white d-flex flex-column h-100 shadow"> 
-                                        <a href="#" class="d-block"><img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDJ8fHRyYXZlbHxlbnwwfHx8&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=700&h=480&fit=crop" class="img-fluid w-100"></a>
-                                        <div class="p-3"> 
-                                            <a href="#" class="text-dark text-decoration-none"><h5 class="font-weight-bold">Relaxing and observing the mountain reflection in a lake</h5></a>
-                                            <h6 class="font-weight-bold small text-secondary">10 August 2020</h6> 
-                                            <p class="mb-0">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p> 
-                                        </div>                                         
-                                    </div>                                     
-                                </div>                                 
-                                <div class="col-lg-4 col-md-6 pb-3 pt-3"> 
-                                    <div class="bg-white d-flex flex-column h-100 shadow"> 
-                                        <a href="#" class="d-block"><img src="https://images.unsplash.com/photo-1499363536502-87642509e31b?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDE2fHx0cmF2ZWx8ZW58MHx8fA&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=700&h=480&fit=crop" class="img-fluid w-100"></a>
-                                        <div class="p-3"> 
-                                            <a href="#" class="text-dark text-decoration-none"><h5 class="font-weight-bold">How to enjoy running your business?</h5></a>
-                                            <h6 class="font-weight-bold small text-secondary">10 August 2020</h6> 
-                                            <p class="mb-0">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p> 
-                                        </div>                                         
-                                    </div>                                     
-                                </div>                                 
-                                <div class="col-lg-4 col-md-6 pb-3 pt-3"> 
-                                    <div class="bg-white d-flex flex-column h-100 shadow"> 
-                                        <a href="#" class="d-block"><img src="https://images.unsplash.com/photo-1471506480208-91b3a4cc78be?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDUyfHx0cmF2ZWx8ZW58MHx8fA&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=700&h=480&fit=crop" class="img-fluid w-100"></a>
-                                        <div class="p-3"> 
-                                            <a href="#" class="text-dark text-decoration-none"><h5 class="font-weight-bold">How to notice colors when cycling over a mountain pass?</h5></a>
-                                            <h6 class="font-weight-bold small text-secondary">10 August 2020</h6> 
-                                            <p class="mb-0">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p> 
-                                        </div>                                         
-                                    </div>                                     
-                                </div>                                 
-                            </div>                             
-                        </div>                         
-                    </section>
+                    <br/>
                 </div>                 
             </div>             
         </div>
-        <footer class="bg-dark pt-5 text-white" style="background: linear-gradient(0deg, rgb(55, 26, 37) 0%, rgb(111, 24, 55) 50%, rgb(64, 0, 25) 100%);"> 
+        <footer class="bg-dark pt-5 text-white" style="background: linear-gradient(0deg, rgb(119, 65, 85) 0%, rgb(111, 24, 55) 50%, rgb(64, 0, 25) 100%);"> 
             <div class="container"> 
                 <div class="row"> 
                     <div class="col-xl-4 mr-auto py-3"> 
                         <img src="footer_01.png" width="40%"/> 
-                        <p class="mb-3" style="width: 90%;">                                Duis pharetra venenatis felis, ut tincidunt ipsum consequat nec. Fusce et porttitor libero, eu aliquam nisi. Nam finibus ullamcorper semper.</p> 
+                        <p class="mb-3" style="width: 90%;">&quot;Tierra de Hombres y Mujeres con Carácter, Voluntad y Decisión, Aqui comienza la Transformación&quot;</p> 
                         <div class="mb-4" style="width: 50%;"> 
                             <a href="#" class="text-white">+1 234 567-890</a> 
                             <br> 
