@@ -109,54 +109,7 @@ function autoSlide() {
     }
     autoSlide();
 	</script>
-            <style>
-        #carrusel01 [type=radio] { display: none; } 
-        #s { 
-            height: 45vw;
-            position: relative;
-            perspective: 1000px;
-            transform-style: preserve-3d; 
-        } 
-        #s label { 
-            margin: auto;
-            width: 81%;
-            height: 100%;
-            border-radius: 10px;
-            position: absolute;
-            left: 0;
-            right: 0;
-            cursor: pointer;
-            transition: transform 1s ease;
-        } 
-        #s1:checked ~ #slide4, #s2:checked ~ #slide5, 		#s3:checked ~ #slide1, #s4:checked ~ #slide2, 		#s5:checked ~ #slide3 { 
-            box-shadow: 0 1px 4px 0 rgba(0,0,0,.37); 
-            opacity: 70%; 
-            transform: translate3d(-20%,0,-200px); 
-        } 
-        #s1:checked ~ #slide5, #s2:checked ~ #slide1, 		#s3:checked ~ #slide2, #s4:checked ~ #slide3, 		#s5:checked ~ #slide4 { 
-            box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2); 
-            opacity: 70%; 
-            transform: translate3d(-10%,0,-100px); 
-        } 
-        #s1:checked ~ #slide1, #s2:checked ~ #slide2, 		#s3:checked ~ #slide3, #s4:checked ~ #slide4, 		#s5:checked ~ #slide5 { 
-            box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19); 
-            transform: translate3d(0,0,0); 
-        } 
-        #s1:checked ~ #slide2, #s2:checked ~ #slide3, 		#s3:checked ~ #slide4, #s4:checked ~ #slide5, 		#s5:checked ~ #slide1 { 
-            box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2); 
-            opacity: 70%; 
-            transform: translate3d(10%,0,-100px); 
-        } 
-        #s1:checked ~ #slide3, #s2:checked ~ #slide4, 		#s3:checked ~ #slide5, #s4:checked ~ #slide1, 		#s5:checked ~ #slide2 { 
-            box-shadow: 0 1px 4px 0 rgba(0,0,0,.37); 
-            opacity: 70%; 
-            transform: translate3d(20%,0,-200px); 
-        }
-        #slide1 { background: #815563; } 
-        #slide2 { background: #815563; } 
-        #slide3 { background: #815563; } 
-        #slide4 { background: #815563; } 
-        #slide5 { background: #815563; }</style>             
+            <style>#carrusel01 [type=radio] { display: none; } #s { height: 45vw; position: relative; perspective: 1000px; transform-style: preserve-3d; } #s label { margin: auto; width: 81%; height: 100%; border-radius: 10px; position: absolute; left: 0; right: 0; cursor: pointer; transition: transform 1s ease; } #s1:checked ~ #slide4, #s2:checked ~ #slide5, 		#s3:checked ~ #slide1, #s4:checked ~ #slide2, 		#s5:checked ~ #slide3 { box-shadow: 0 1px 4px 0 rgba(0,0,0,.37); opacity: 70%; transform: translate3d(-20%,0,-200px); } #s1:checked ~ #slide5, #s2:checked ~ #slide1, 		#s3:checked ~ #slide2, #s4:checked ~ #slide3, 		#s5:checked ~ #slide4 { box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2); opacity: 70%; transform: translate3d(-10%,0,-100px); } #s1:checked ~ #slide1, #s2:checked ~ #slide2, 		#s3:checked ~ #slide3, #s4:checked ~ #slide4, 		#s5:checked ~ #slide5 { box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19); transform: translate3d(0,0,0); } #s1:checked ~ #slide2, #s2:checked ~ #slide3, 		#s3:checked ~ #slide4, #s4:checked ~ #slide5, 		#s5:checked ~ #slide1 { box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2); opacity: 70%; transform: translate3d(10%,0,-100px); } #s1:checked ~ #slide3, #s2:checked ~ #slide4, 		#s3:checked ~ #slide5, #s4:checked ~ #slide1, 		#s5:checked ~ #slide2 { box-shadow: 0 1px 4px 0 rgba(0,0,0,.37); opacity: 70%; transform: translate3d(20%,0,-200px); } #slide1 { background: #815563; } #slide2 { background: #815563; } #slide3 { background: #815563; } #slide4 { background: #815563; } #slide5 { background: #815563; }</style>             
         </section>
         <br/>
         <br/>
@@ -198,17 +151,17 @@ function autoSlide() {
             </div>
             <div class="container" style="grid-area:1 / 2 / 2 / 3;">
                 <div class="row" style="grid-area: 1 / 1 / 2 / 2;">
-                    <div class="align-items-center background-cover col-md d-flex embed-responsive embed-responsive-4by3 text-center" style="grid-area: 1 / 1 / 2 / 2; background-image: url('https://images.unsplash.com/photo-1554435493-93422e8220c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMDkyMnwwfDF8c2VhcmNofDJ8fGJ1aWxkaW5nfGVufDB8fHw&ixlib=rb-1.2.1&q=80&w=1080'); background-color: #795261;" id="etiqueta03">
-                        <div class="container">
-                            <h6 class="font-weight-bold text-uppercase text-white">Agenda tu cita INE</h6>
-                        </div>
-                        <style>#etiqueta03 { background-blend-mode: multiply; transition: 0.1s ease-out; } #etiqueta03:hover { background-blend-mode: normal; border-top-left-radius: 10px; border-top-right-radius: 10px; text-shadow: -1px 1px 0 #7d4d1f, 1px 1px 0 #7d4d1f,1px -1px 0 #7d4d1f,-1px -1px 0 #7d4d1f; transform: translateY(-7px); transition: 0.2s ease-in; }</style>
+                    <div class="align-items-center background-cover col-md d-flex embed-responsive embed-responsive-4by3 text-center" style="background-color: #795261; grid-area: 1 / 1 / 2 / 2; ;background-image:url('etiqueta_03.png');" id="etiqueta03">
+                        <a style="width: 100%; height: 100%;" class="align-items-center d-flex justify-content-center" href="https://app-inter.ife.org.mx/siac2011/citas_initCapturaCitas.siac"><div class="container position-absolute">
+                                <h6 class="font-weight-bold text-etiqueta text-uppercase text-white">Agenda tu cita INE</h6>
+                            </div></a>
+                        <style>#etiqueta03 { background-blend-mode: multiply; transition: 0.1s ease-out; } #etiqueta03:hover { background-blend-mode: normal; border-top-left-radius: 10px; border-top-right-radius: 10px; text-shadow: -1px 1px 0 #795261, 1px 1px 0 #795261,1px -1px 0 #795261,-1px -1px 0 #795261; transform: translateY(-7px); transition: 0.2s ease-in; }</style>
                     </div>
-                    <div class="align-items-center background-cover col-md d-flex embed-responsive embed-responsive-4by3 text-center" style="grid-area: 1 / 1 / 2 / 2; background-image: url('https://images.unsplash.com/photo-1586773860418-d37222d8fce3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMDkyMnwwfDF8c2VhcmNofDl8fGhvc3BpdGFsfGVufDB8fHw&ixlib=rb-1.2.1&q=80&w=1080'); background-color: #795261;" id="etiqueta04">
-                        <div class="container">
-                            <h6 class="font-weight-bold text-uppercase text-white">Consulta de CURP</h6>
-                        </div>
-                        <style>#etiqueta04 { background-blend-mode: multiply; transition: 0.1s ease-out; } #etiqueta04:hover { background-blend-mode: normal; border-top-left-radius: 10px; border-top-right-radius: 10px; text-shadow: -1px 1px 0 #7d4d1f, 1px 1px 0 #7d4d1f,1px -1px 0 #7d4d1f,-1px -1px 0 #7d4d1f; transform: translateY(-7px); transition: 0.2s ease-in; }</style>
+                    <div class="align-items-center background-cover col-md d-flex embed-responsive embed-responsive-4by3 text-center" style="background-color: #815664; grid-area: 1 / 1 / 2 / 2; ;background-image:url('etiqueta_04.png');" id="etiqueta04">
+                        <a href="https://www.gob.mx/curp/" style="width: 100%; height: 100%;" class="align-items-center d-flex justify-content-center"><div class="container position-absolute">
+                                <h6 class="font-weight-bold text-uppercase text-white">Consulta de CURP</h6>
+                            </div></a>
+                        <style>#etiqueta04 { background-blend-mode: multiply; transition: 0.1s ease-out; } #etiqueta04:hover { background-blend-mode: normal; border-top-left-radius: 10px; border-top-right-radius: 10px; text-shadow: -1px 1px 0 #40693A, 1px 1px 0 #40693A,1px -1px 0 #40693A,-1px -1px 0 #40693A; transform: translateY(-7px); transition: 0.2s ease-in; }</style>
                     </div>
                 </div>
             </div>
