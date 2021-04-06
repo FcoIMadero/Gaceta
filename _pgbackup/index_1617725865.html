@@ -129,7 +129,99 @@ function autoSlide() {
     }
     autoSlide();
 	</script>
-            <style>#carrusel01 [type=radio] { display: none; } #s { height: 40vw; position: relative; perspective: 1000px; transform-style: preserve-3d; } #s label { margin: auto; width: 70%; height: 100%; border-radius: 10px; position: absolute; left: 0; right: 0; cursor: pointer; transition: transform 1s ease; } #s1:checked ~ #slide4, #s2:checked ~ #slide5, 		#s3:checked ~ #slide1, #s4:checked ~ #slide2, 		#s5:checked ~ #slide3 { box-shadow: 0 1px 4px 0 rgba(0,0,0,.37); opacity: 70%; transform: translate3d(-30%,0,-200px); } #s1:checked ~ #slide5, #s2:checked ~ #slide1, 		#s3:checked ~ #slide2, #s4:checked ~ #slide3, 		#s5:checked ~ #slide4 { box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2); opacity: 70%; transform: translate3d(-15%,0,-100px); } #s1:checked ~ #slide1, #s2:checked ~ #slide2, 		#s3:checked ~ #slide3, #s4:checked ~ #slide4, 		#s5:checked ~ #slide5 { box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19); transform: translate3d(0,0,0); } #s1:checked ~ #slide2, #s2:checked ~ #slide3, 		#s3:checked ~ #slide4, #s4:checked ~ #slide5, 		#s5:checked ~ #slide1 { box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2); opacity: 70%; transform: translate3d(15%,0,-100px); } #s1:checked ~ #slide3, #s2:checked ~ #slide4, 		#s3:checked ~ #slide5, #s4:checked ~ #slide1, 		#s5:checked ~ #slide2 { box-shadow: 0 1px 4px 0 rgba(0,0,0,.37); opacity: 70%; transform: translate3d(30%,0,-200px); } #slide1 { background: #815563; } #slide2 { background: #815563; } #slide3 { background: #815563; } #slide4 { background: #815563; } #slide5 { background: #815563; }</style>
+            <style>
+        #carrusel01 [type=radio] {
+    display: none;
+}
+
+#s {
+    height: 40vw;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+#s label {
+    margin: auto;
+    width: 70%;
+    height: 100%;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    transition: transform 1s ease;
+}
+
+#s1:checked ~ #slide4,
+#s2:checked ~ #slide5,
+		#s3:checked ~ #slide1,
+#s4:checked ~ #slide2,
+		#s5:checked ~ #slide3 {
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+    opacity: 70%;
+    transform: translate3d(-30%,0,-200px);
+}
+
+#s1:checked ~ #slide5,
+#s2:checked ~ #slide1,
+		#s3:checked ~ #slide2,
+#s4:checked ~ #slide3,
+		#s5:checked ~ #slide4 {
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
+    opacity: 70%;
+    transform: translate3d(-15%,0,-100px);
+}
+
+#s1:checked ~ #slide1,
+#s2:checked ~ #slide2,
+		#s3:checked ~ #slide3,
+#s4:checked ~ #slide4,
+		#s5:checked ~ #slide5 {
+    box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19);
+    transform: translate3d(0,0,0);
+}
+
+#s1:checked ~ #slide2,
+#s2:checked ~ #slide3,
+		#s3:checked ~ #slide4,
+#s4:checked ~ #slide5,
+		#s5:checked ~ #slide1 {
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
+    opacity: 70%;
+    transform: translate3d(15%,0,-100px);
+}
+
+#s1:checked ~ #slide3,
+#s2:checked ~ #slide4,
+		#s3:checked ~ #slide5,
+#s4:checked ~ #slide1,
+		#s5:checked ~ #slide2 {
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+    opacity: 70%;
+    transform: translate3d(30%,0,-200px);
+}
+
+#slide1 {
+    background: #815563;
+}
+
+#slide2 {
+    background: #815563;
+}
+
+#slide3 {
+    background: #815563;
+}
+
+#slide4 {
+    background: #815563;
+}
+
+#slide5 {
+    background: #815563;
+}
+    </style>
         </section>         
         <br/> 
         <br/> 
@@ -192,43 +284,6 @@ function autoSlide() {
                     <h5 class="mb-0 text-center"> <a class="collapsed font-weight-bold h4" data-toggle="collapse" href="#collapse2" aria-expanded="false" aria-controls="collapse2" style="color: #400019;">MAS CONTENIDO</a> </h5> 
                 </div>                 
                 <div id="collapse2" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#panels1" style="background-color: #6f1837;"> 
-                    <br/>
-                    <section data-pg-name="Noticia Seis"> 
-                        <div class="container"> 
-                            <div class="accordion" id="accordionSeis"> 
-                                <div class="card" style="border-radius: 25px;" id="nota1"> 
-                                    <div class="card-header" id="headingSeis"> 
-                                        <div class="row"> 
-                                            <div class="col col-lg-6 col-md col-sm col-xl-4"> 
-                                                <label class="background-cover embed-responsive embed-responsive-4by3" style="border-radius: 15px; margin-top: 5px; margin-bottom: 5px; ;background-image:url('noticia_06.jpg');" id="nota_photo01"> 
-</label>                                                 
-                                            </div>                                             
-                                            <div class="align-items-center col-auto col-lg-6 col-md-auto col-sm-auto col-xl-8 d-flex"> 
-                                                <div style="margin-right: 10px; margin-left: 10px;" class="text-justify"> 
-                                                    <p>Con el propósito de apoyar la economía de las familias maderenses, el alcalde Jonathan Ávalos Rodríguez establecerá un laboratorio de análisis clínicos y rayos X que prestará sus servicios en forma gratuita para las personas de escasos recursos.</p>
-                                                    <p>Esta que será una pequeña clínica comunitaria se ubicará en la plaza Hidalgo, en las instalaciones donde anteriormente se ubicaba la Dirección de Obras Públicas, edificio que será rehabilitado y acondicionado para que pueda operar el laboratorio en un lugar de fácil acceso.</p>                                                      
-                                                    <h2 class="mb-0"> <button class="btn btn-lg btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeis" aria-expanded="false" aria-controls="collapseSeis">Leer más.....</button> </h2> 
-                                                </div>                                                 
-                                            </div>                                             
-                                        </div>                                         
-                                    </div>                                     
-                                    <div id="collapseSeis" class="collapse" aria-labelledby="headingSeis" data-parent="#accordionSeis"> 
-                                        <div class="card-body text-justify"> 
-                                            <div>                                                                                                                                                                                                                                                      
-                                                <p>Ávalos Rodríguez explicó que en esta clínica las personas podrán practicarse análisis como biometría hemática, colesterol, triglicéridos, glucosa, examen general de orina y  radiografías de todo tipo, desde huesos hasta órganos como pulmones, abdomen y riñones.</p>
-                                                <p>El alcalde externó el propósito de conferirle a esta clínica comunitaria el nombre del doctor Isidro Pérez, un gran médico, un profesional de la salud pero, sobre todo, un gran ser humano que por varios meses luchó contra el COVID-19 atendiendo personas en todo el municipio de Francisco I. Madero con ese padecimiento.</p>
-                                                <p>&ldquo;Lamentablemente al final perdió la vida; su salud se quebrantó y no pudo sobreponerse, perdiendo la batalla pero quedando su obra en el recuerdo y en el corazón de los maderenses. Si su familia lo autoriza, así se llamará este laboratorio&rdquo;, dijo.</p>
-                                                <p>Estos servicios serán gratuitos para la gente de Francisco I. Madero, mediante estudio socioeconómico donde se compruebe su condición, y aquellos que tengan la posibilidad pagarán sólo una cuota de recuperación.</p>
-                                                <p>Será cuestión de algunas semanas para que este proyecto se concrete, para beneficio de las familias.</p> 
-                                                <h2 class="mb-0 text-center"> <button class="btn btn-lg btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeis" aria-expanded="false" aria-controls="collapseSeis">Leer menos.</button> </h2> 
-                                            </div>                                             
-                                        </div>                                         
-                                    </div>                                     
-                                    <style>#nota1 { background-color: #f5f5f5; border-radius: 20px; box-shadow: 7px 7px 1px #6f1837; transition: 0.1s ease; } #nota1:hover { background-color: #ffffff; border-radius: 20px; box-shadow: 7px 7px 1px #835969; transform: translate3d(-5px,-5px,0); transition: 0.1s ease; }</style>                                     
-                                </div>                                 
-                            </div>                             
-                        </div>                         
-                    </section>
                     <br/>
                     <section data-pg-name="Noticia Siete"> 
                         <div class="container"> 
@@ -571,7 +626,45 @@ mayo en el Gimnasio Municipal.</p>
                                 </div>                                 
                             </div>                             
                         </div>                         
-                    </section>                                                               
+                    </section>                     
+                    <br/> 
+                    <section data-pg-name="Noticia Seis"> 
+                        <div class="container"> 
+                            <div class="accordion" id="accordionSeis"> 
+                                <div class="card" style="border-radius: 25px;" id="nota1"> 
+                                    <div class="card-header" id="headingSeis"> 
+                                        <div class="row"> 
+                                            <div class="col col-lg-6 col-md col-sm col-xl-4"> 
+                                                <label class="background-cover embed-responsive embed-responsive-4by3" style="border-radius: 15px; margin-top: 5px; margin-bottom: 5px; ;background-image:url('noticia_06.jpg');" id="nota_photo01"> 
+</label>                                                 
+                                            </div>                                             
+                                            <div class="align-items-center col-auto col-lg-6 col-md-auto col-sm-auto col-xl-8 d-flex"> 
+                                                <div style="margin-right: 10px; margin-left: 10px;" class="text-justify"> 
+                                                    <p>En el marco de la conmemoración del &ldquo;Día Mundial del Agua&rdquo;, la Presidencia Municipal de Francisco I. Madero organizó una carrera atlética de un kilómetro, con el objetivo de promover la conciencia en el cuidado del vital líquido.</p> 
+                                                    <p>La competencia fue organizada por el Sistema Municipal de Aguas y Saneamiento (SIMAS) y el Departamento de Ecología, registrándose 65 competidores en las ramas varonil y femenil.</p> 
+                                                    <h2 class="mb-0"> <button class="btn btn-lg btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeis" aria-expanded="false" aria-controls="collapseSeis">Leer más.....</button> </h2> 
+                                                </div>                                                 
+                                            </div>                                             
+                                        </div>                                         
+                                    </div>                                     
+                                    <div id="collapseSeis" class="collapse" aria-labelledby="headingSeis" data-parent="#accordionSeis"> 
+                                        <div class="card-body text-justify"> 
+                                            <div> 
+                                                <p>La carrera inició a las 8:15 horas de este lunes, partiendo los atletas de la plaza &ldquo;Francisco I. Madero&rdquo;, ubicada en el entronque, y siguiendo el bulevar Luis Donaldo Colosio hacia el oriente para finalizar en la Unidad Deportiva.</p> 
+                                                <p>Los participantes fueron escoltados por unidades de la Dirección de Seguridad Pública Municipal para salvaguardar su integridad, finalizando el recorrido sin incidentes. Hubo quienes alternaron la carrera con el trote y la caminata, pues les interesaba más que nada participar en esta actividad para promover la cultura del cuidado del agua.</p> 
+                                                <p>Los ganadores de esta carrera en la rama varonil fueron: Evaristo García (primer lugar), Edwin Ricardo Serrano (segundo lugar) y José Aguilar Ruvalcaba (tercera lugar), mientras que en la rama femenil fueron Elizabeth Montañez (primer lugar), Dulce González (segundo lugar) y Norma Alicia Gallegos (tercer lugar).</p> 
+                                                <p>Los tres primeros lugares de cada rama recibieron como premio dinero en efectivo.</p> 
+                                                <p>El titular de SIMAS, Luis Daniel Gamiz Ortega, invitó a la comunidad a reconocer la importancia del agua y a darle un uso adecuado para garantizar su presencia en nuestra región por más tiempo.</p> 
+                                                <p>&ldquo;No desperdiciar el líquido y darle un segundo aprovechamiento nos ayuda a extraer menos agua del subsuelo. Que todos los esfuerzos vayan encaminados a ahorrar este recurso y darle un uso adecuado&rdquo;, dijo.</p> 
+                                                <h2 class="mb-0 text-center"> <button class="btn btn-lg btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeis" aria-expanded="false" aria-controls="collapseSeis">Leer menos.</button> </h2> 
+                                            </div>                                             
+                                        </div>                                         
+                                    </div>                                     
+                                    <style>#nota1 { background-color: #f5f5f5; border-radius: 20px; box-shadow: 7px 7px 1px #6f1837; transition: 0.1s ease; } #nota1:hover { background-color: #ffffff; border-radius: 20px; box-shadow: 7px 7px 1px #835969; transform: translate3d(-5px,-5px,0); transition: 0.1s ease; }</style>                                     
+                                </div>                                 
+                            </div>                             
+                        </div>                         
+                    </section>                     
                     <br/> 
                     <h3 class="mb-0 text-center"> <a class="collapsed font-weight-bold h3" data-toggle="collapse" href="#collapse2" aria-expanded="false" aria-controls="collapse2" style="color: white;">Cerrar</a> </h3> 
                     <br/> 
