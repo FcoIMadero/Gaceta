@@ -15,15 +15,15 @@
         <link rel="stylesheet" href="blocks.css"> 
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abhaya+Libre&display=swap"> 
     </head>     
-    <body style="background-image: url('fondo_01.png'); background-attachment: fixed; background-color: rgb(64,0,25);"> 
+    <body style="background-image: url('fondo_01.png'); background-attachment: fixed; background-color: #400019; background-repeat: no-repeat;"> 
         <!-- Bootstrap core JavaScript
     ================================================== -->         
         <!-- Placed at the end of the document so the pages load faster -->         
         <header data-pg-name="Cabecera"> 
-            <nav class="navbar navbar-dark navbar-expand-lg pb-0 pb-lg-2 pb-md-3 pb-sm-3 pb-xl-2 pt-0 pt-lg-2 pt-md-3 pt-sm-3 pt-xl-2 py-4 py-lg-2 text-uppercase" style="background: -webkit-linear-gradient(90deg, #7d4d1f 7.30622%, #f8e07c 100%);"> 
+            <nav class="navbar navbar-dark navbar-expand-lg pb-0 pb-lg-2 pb-md-3 pb-sm-3 pb-xl-2 pt-0 pt-lg-2 pt-md-3 pt-sm-3 pt-xl-2 py-4 py-lg-2 text-uppercase" style="background-color: #400019;"> 
                 <div class="container"> 
                     <img src="titulo_logo_01.png" style="margin-right: 10px;" width="50"> 
-                    <img src="titulo_texto_01.png" style="margin-top: 0px;" width="100"> 
+                    <img src="footer_01.png" style="margin-top: 0px;" width="100"> 
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown-12" aria-controls="navbarNavDropdown-12" aria-expanded="false" aria-label="Toggle navigation" style="background-color: #b7842f;"> 
                         <span class="navbar-toggler-icon"></span> 
                     </button>                     
@@ -31,7 +31,7 @@
                         <ul class="ml-auto navbar-nav"> 
                             <br/> 
                             <li class="nav-item dropdown"> 
-                                <a class="nav-link px-lg-3 py-lg-4 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">                                     Teléfonos de Emergencia </a> 
+                                <a class="dropdown-toggle nav-link px-lg-3 py-lg-4 text-light" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">                                     Teléfonos de Emergencia </a> 
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"> 
                                     <a class="dropdown-item" href="tel:+8727732195">Cruz Roja</a> 
                                     <a class="dropdown-item" href="tel:+8727734209">Bomberos</a> 
@@ -42,7 +42,7 @@
                                 </div>                                 
                             </li>                             
                             <li class="nav-item dropdown"> 
-                                <a class="nav-link px-lg-3 py-lg-4 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">                                     Redes Sociales </a> 
+                                <a class="dropdown-toggle nav-link px-lg-3 py-lg-4 text-light" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">                                     Redes Sociales </a> 
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"> 
                                     <a class="dropdown-item" href="https://www.facebook.com/presidenciamadero/ " target="_blank">Facebook</a> 
                                     <a class="dropdown-item" href="https://twitter.com/Presidencia_Fco?s=20 " target="_blank">Twitter</a> 
@@ -51,7 +51,7 @@
                                 </div>                                 
                             </li>                             
                             <li class="nav-item dropdown"> 
-                                <a class="nav-link px-lg-3 py-lg-4 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">                                     Ubicaciones </a> 
+                                <a class="dropdown-toggle nav-link px-lg-3 py-lg-4 text-light" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">                                     Ubicaciones </a> 
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"> 
                                     <a class="dropdown-item" href="https://goo.gl/maps/xRV7eLq8syHarm7e8 " target="_blank">DIF Madero</a> 
                                     <a class="dropdown-item" href="https://goo.gl/maps/keAvpThUWCF7RRBh9 " target="_blank">DSP Municipal</a> 
@@ -61,7 +61,7 @@
                                 </div>                                 
                             </li>                             
                             <li class="nav-item dropdown"> 
-                                <a class="nav-link px-lg-3 py-lg-4 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">                                     Otros Servicios </a> 
+                                <a class="dropdown-toggle nav-link px-lg-3 py-lg-4 text-light" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">                                     Otros Servicios </a> 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink"> 
                                     <a class="dropdown-item" href="https://jovenesconstruyendoelfuturo.stps.gob.mx/registro_aprendiz " target="_blank">Jovenes Construyendo el futuro</a> 
                                     <a class="dropdown-item" href="https://mivacuna.salud.gob.mx/index.php " target="_blank">Registro de Vacuna Covid-19</a> 
@@ -77,11 +77,11 @@
         <section data-pg-name="Main Banner"> 
             <video src="banner.mp4" autoplay="true" loop="true" muted="true" preload="auto" width="100%">Your browser doesn't support HTML5 video tag.</video>             
         </section>         
-        <br/>                   
-        <section>
+        <br/> 
+        <section data-pg-name="Carrusel">
             <div class="container">
                 <div class="row">
-                    <div class="align-items-center col-lg-9 col-md-9 col-xl-9 d-flex" style="background-color: rgba(127, 84, 96, 0.5);">
+                    <div class="align-items-center col-lg-9 col-md-9 col-xl-9 d-flex pl-0 pl-lg-0 pl-md-0 pl-sm-0 pl-xl-0 pr-0 pr-lg-0 pr-md-0 pr-sm-0 pr-xl-0" style="background-color: rgba(127, 84, 96, 0.75); border-radius: 15px; box-shadow: 0 25px 35px rgba(0,0,0,0.6);">
                         <div id="carousel1" class="carousel slide" data-ride="carousel"> 
                             <ol class="carousel-indicators"> 
                                 <li data-target="#carousel1" data-slide-to="0" class="active"></li>                                 
@@ -130,12 +130,7 @@
                                 <div class="col-3 col-lg-auto col-md-auto col-sm-3 col-xl-auto pl-1 pl-lg-0 pl-md-0 pl-sm-1 pl-xl-0 pr-1 pr-lg-0 pr-md-0 pr-sm-1 pr-xl-0 pt-2 pt-lg-1 pt-md-1 pt-sm-2 pt-xl-1">
                                     <img data-target="#carousel1" data-slide-to="3" src="main_04.jpg" width="100%" id="imag04"> 
                                 </div>
-                                <style>
-        		#imag01:hover{cursor: pointer; transform: translateY(-5px);}
-                #imag02:hover{cursor: pointer; transform: translateY(-5px);}
-                #imag03:hover{cursor: pointer; transform: translateY(-5px);}
-                #imag04:hover{cursor: pointer; transform: translateY(-5px);}
-    </style>
+                                <style>#imag01 { border-radius: 35px; } #imag01:hover { cursor: pointer; border-radius: 15px; transition: 0.65s; } #imag02 { border-radius: 35px; } #imag02:hover { cursor: pointer; border-radius: 15px; transition: 0.65s; } #imag03 { border-radius: 35px; } #imag03:hover { cursor: pointer; border-radius: 15px; transition: 0.65s; } #imag04 { border-radius: 35px; } #imag04:hover { cursor: pointer; border-radius: 15px; transition: 0.65s; }</style>
                             </div>
                         </div>                         
                     </div>
@@ -157,7 +152,7 @@
                             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14372.271818798727!2d-103.277091!3d25.7683189!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x525dbdc834122d03!2sPresidencia%20Municipal%20Fco.%20I%20Madero!5e0!3m2!1ses-419!2smx!4v1613250211077!5m2!1ses-419!2smx" frameborder="0" style="grid-area: 1 / 2 / 2 / 3;" allowfullscreen="" aria-hidden="false" tabindex="0" width="100%" data-pg-name="FCOmaps"></iframe>                             
                             <br/> 
                         </div>                         
-                    </div>                     
+                    </div>
                 </div>                 
             </div>             
         </section>         
@@ -202,6 +197,157 @@
                     <h5 class="mb-0 text-center"> <a class="collapsed font-weight-bold h4" data-toggle="collapse" href="#collapse2" aria-expanded="false" aria-controls="collapse2" style="color: rgb(64,0,25);">MAS CONTENIDO</a> </h5> 
                 </div>                 
                 <div id="collapse2" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#panels1" style="background-color: #6f1837;"> 
+                    <br/>
+                    <section data-pg-name="Noticia Cuatro"> 
+                        <div class="container"> 
+                            <div class="accordion" id="accordionCuatro"> 
+                                <div class="card" style="border-radius: 25px;" id="nota1"> 
+                                    <div class="card-header" id="headingCuatro"> 
+                                        <div class="row"> 
+                                            <div class="col col-lg-6 col-md col-sm col-xl-4"> 
+                                                <label class="background-cover embed-responsive embed-responsive-4by3" style="border-radius: 15px; margin-top: 5px; margin-bottom: 5px; background-image: url('noticia_04.jpg');" id="nota_photo01"> 
+</label>                                                 
+                                            </div>                                             
+                                            <div class="align-items-center col-auto col-lg-6 col-md-auto col-sm-auto col-xl-8 d-flex"> 
+                                                <div style="margin-right: 10px; margin-left: 10px;" class="text-justify"> 
+                                                    <p>En previsión de afectaciones por las lluvias que se han presentado en estos días, y que se esperan todavía más, la Unidad de Protección Civil se declaró en guardia las 24 horas del día para atender cualquier emergencia que se presente.</p>
+                                                    <p>Así lo declaró la recientemente designada titular de dicha corporación, Salma Madalit Hernández González, quien el pasado miércoles fue designada en dicho cargo por el alcalde Jonathan Ávalos Rodríguez.</p> 
+                                                    <h2 class="mb-0"> <button class="btn btn-lg btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseCuatro" aria-expanded="false" aria-controls="collapseCuatro">Leer más.....</button> </h2> 
+                                                </div>                                                 
+                                            </div>                                             
+                                        </div>                                         
+                                    </div>                                     
+                                    <div id="collapseCuatro" class="collapse" aria-labelledby="headingCuatro" data-parent="#accordionCuatro"> 
+                                        <div class="card-body text-justify"> 
+                                            <div> 
+                                                <p>Ella sustituye a Amador Carrillo Bernal, quien a su vez fue designado titular del Departamento de Ecología, en lo que prácticamente viene siendo un enroque de ambas dependencias, pues Hernández González era anteriormente la jefa de Ecología.</p>
+                                                <p>Salma Hernández se convierte así en la única mujer responsable de una Unidad de Protección Civil municipal en el Estado de Coahuila, y la segunda en la Comarca Lagunera, dado que en Ciudad Lerdo también es una dama la titular de dicha corporación.</p>
+                                                <p>La flamante directora es ingeniera ambiental y actualmente estudia la Maestría en Salud Ocupacional.</p>
+                                                <p>En entrevista mencionó que decretó la guardia por 24 horas ante las precipitaciones pluviales que se han presentado de manera continua en la región, con el objetivo de intervenir lo más pronto posible en el acumulamiento de agua de lluvia en las calles y si se presentan daños en vivienda.</p>
+                                                <p>Además ordenó la instalación de un albergue en primera instancia en el Cuartel de Bomberos, por si se requiere desalojar familias de viviendas que estén en peligro.</p>
+                                                <p>Hernández González pidió a la población colaborar con estas acciones desalojando la basura de sus techos y de los puntos cercanos a donde se encuentren las alcantarillas, bocas de tormenta y pozos de visita, para evitar taponamientos que favorezcan inundaciones en las calles o filtración de agua en las viviendas.</p>
+                                                <p>La titular de Protección Civil agregó que otra de las vertientes de alerta que manejan en estos momentos es la vigilancia en canales para evitar que las personas se metan a nadar, poniendo en peligro su vida.</p>
+                                                <p>Y por último mencionó que ya están supervisando la operatividad de quintas y albercas, pues debido al periodo vacacional que ya inició se registra mayor actividad en esos lugares.</p>
+                                                <p>&ldquo;Cada lugar de esparcimiento de este tipo debe contar con la señalización adecuada, los permisos correspondientes y las medidas preventivas para evitar accidentes con consecuencias lamentables&rdquo;, dijo.</p> 
+                                                <h2 class="mb-0 text-center"> <button class="btn btn-lg btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseCuatro" aria-expanded="false" aria-controls="collapseCuatro">Leer menos.</button> </h2> 
+                                            </div>                                             
+                                        </div>                                         
+                                    </div>                                     
+                                </div>                                 
+                            </div>                             
+                        </div>                         
+                    </section>
+                    <br/>
+                    <section data-pg-name="Noticia Cinco"> 
+                        <div class="container"> 
+                            <div class="accordion" id="accordionCinco"> 
+                                <div class="card" style="border-radius: 25px;" id="nota1"> 
+                                    <div class="card-header" id="headingCinco"> 
+                                        <div class="row"> 
+                                            <div class="col col-lg-6 col-md col-sm col-xl-4"> 
+                                                <label class="background-cover embed-responsive embed-responsive-4by3" style="border-radius: 15px; margin-top: 5px; margin-bottom: 5px; background-image: url('noticia_05.jpg');" id="nota_photo01"> 
+</label>                                                 
+                                            </div>                                             
+                                            <div class="align-items-center col-auto col-lg-6 col-md-auto col-sm-auto col-xl-8 d-flex"> 
+                                                <div style="margin-right: 10px; margin-left: 10px;" class="text-justify"> 
+                                                    <p>Por mayoría de los integrantes del Comité de Planeación para el Desarrollo del Municipio (COPLADEM) se aprobaron obras por casi 19 millones de pesos para este año en Francisco I. Madero.</p>
+                                                    <p>La sesión se realizó el pasado jueves en la Casa de la Cultura y fue presidida por el titular de dicho Comité, que es el alcalde Jonathan Ávalos Rodríguez. Los recursos con lo que se realizarán estas obras son municipales y se contemplan dentro del Fondo de Aportaciones para la Infraestructura Social.</p> 
+                                                    <h2 class="mb-0"> <button class="btn btn-lg btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseCinco" aria-expanded="false" aria-controls="collapseCinco">Leer más.....</button> </h2> 
+                                                </div>                                                 
+                                            </div>                                             
+                                        </div>                                         
+                                    </div>                                     
+                                    <div id="collapseCinco" class="collapse" aria-labelledby="headingCinco" data-parent="#accordionCinco"> 
+                                        <div class="card-body text-justify"> 
+                                            <div> 
+                                                <p>Las obras aprobadas contemplan la perforación de una noria con inversión de 5.5 millones de pesos, la construcción de la Clínica Comunitaria de Imagenología &ldquo;Dr. Isidro Pérez Luján&rdquo;, con un costo de 3.5 millones de pesos y recarpeteo en las calles 5 de Febrero, Artículo 123, Paseo de la Alfalfa, Paseo del Frijol, Paseo del Maíz y calle Viesca.</p>
+                                                <p>También pavimentación en avenida Ferrocarril, carretera Madero-Florida y el ejido Hidalgo, además de aplicación de caliche en el ejido Virginias; se realizarán trabajos interiores en los silos y la construcción del Centro Comunitario de Recreación y Deportivo.</p>
+                                                <p>Será rehabilitado el centro de desarrollo comunitario &ldquo;La Cueva&rdquo; y además se construirá el espacio deportivo y de esparcimiento &ldquo;Nemesio González Sandoval&rdquo;, todo lo cual comprende una inversión de 18.8 millones de pesos.</p>
+                                                <p>Es importante mencionar que varias de estas obras se iniciaron desde hace unos meses, mas es necesario contar con la aprobación de los integrantes de COPLADEM, lo cual se logró con mayoría de votos.</p>
+                                                <p>De acuerdo a la normativa de dichos Fondos, estos recursos deben estar ejercidos antes de que finalice el año.</p> 
+                                                <h2 class="mb-0 text-center"> <button class="btn btn-lg btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseCinco" aria-expanded="false" aria-controls="collapseCinco">Leer menos.</button> </h2> 
+                                            </div>                                             
+                                        </div>                                         
+                                    </div>                                     
+                                </div>                                 
+                            </div>                             
+                        </div>                         
+                    </section>
+                    <br/>
+                    <section data-pg-name="Noticia Seis"> 
+                        <div class="container"> 
+                            <div class="accordion" id="accordionSeis"> 
+                                <div class="card" style="border-radius: 25px;" id="nota1"> 
+                                    <div class="card-header" id="headingSeis"> 
+                                        <div class="row"> 
+                                            <div class="col col-lg-6 col-md col-sm col-xl-4"> 
+                                                <label class="background-cover embed-responsive embed-responsive-4by3" style="border-radius: 15px; margin-top: 5px; margin-bottom: 5px; ;background-image:url('noticia_06.jpg');" id="nota_photo01"> 
+</label>                                                 
+                                            </div>                                             
+                                            <div class="align-items-center col-auto col-lg-6 col-md-auto col-sm-auto col-xl-8 d-flex"> 
+                                                <div style="margin-right: 10px; margin-left: 10px;" class="text-justify"> 
+                                                    <p>Personal de la Presidencia Municipal de Francisco I. Madero gozará de su periodo vacacional de verano a partir del próximo 12 de julio, el cual comprenderá un lapso de tres semanas, para reincorporarse a sus actividades el 3 de agosto.</p>
+                                                    <p>
+Mediante
+una circular enviada a todas las direcciones y departamentos, el secretario del
+Ayuntamiento, Gilberto López Estrello, da a conocer esta medida que se
+determina en base al Artículo 126 del Código Municipal vigente en el Estado de
+Coahuila.</p> 
+                                                    <h2 class="mb-0"> <button class="btn btn-lg btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeis" aria-expanded="false" aria-controls="collapseSeis">Leer más.....</button> </h2> 
+                                                </div>                                                 
+                                            </div>                                             
+                                        </div>                                         
+                                    </div>                                     
+                                    <div id="collapseSeis" class="collapse" aria-labelledby="headingSeis" data-parent="#accordionSeis"> 
+                                        <div class="card-body text-justify"> 
+                                            <div> 
+                                                <p>En el citado oficio se exhorta a cada dependencia a colaborar con las autoridades municipales dejando guardias para atender a la comunidad en esos días de asueto en horario de nueve de la mañana a una de la tarde.</p>
+                                                <p>En aquellos departamentos donde se requiere la participación continua del personal, como por ejemplo Limpieza, Parques y Jardines, DSPM, Protección Civil, será menor el número de días a disfrutar por el personal, debido a la naturaleza de sus funciones.</p>
+                                                <p>Estos días de asueto no afectan el programa de trabajo del Ayuntamiento que encabeza Jonathan Ávalos Rodríguez. De hecho, varias de las obras contempladas para este año ya están en marcha, como el laboratorio de imagenología y la repavimentación de algunas calles.</p>
+                                                <p> Es importante mencionar que el personal de la Presidencia Municipal tiene derecho a tres periodos vacacionales a lo largo del año: en semana santa, en verano y en diciembre, y siempre se procura dejar personal de guardia para atender a los ciudadanos que acuden a realizar un trámite.</p> 
+                                                <h2 class="mb-0 text-center"> <button class="btn btn-lg btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeis" aria-expanded="false" aria-controls="collapseSeis">Leer menos.</button> </h2> 
+                                            </div>                                             
+                                        </div>                                         
+                                    </div>                                     
+                                </div>                                 
+                            </div>                             
+                        </div>                         
+                    </section>
+                    <br/>
+                    <section data-pg-name="Noticia Siete"> 
+                        <div class="container"> 
+                            <div class="accordion" id="accordionSiete"> 
+                                <div class="card" style="border-radius: 25px;" id="nota1"> 
+                                    <div class="card-header" id="headingSiete"> 
+                                        <div class="row"> 
+                                            <div class="col col-lg-6 col-md col-sm col-xl-4"> 
+                                                <label class="background-cover embed-responsive embed-responsive-4by3" style="border-radius: 15px; margin-top: 5px; margin-bottom: 5px; ;background-image:url('noticia_07.jpg');" id="nota_photo01"> 
+</label>                                                 
+                                            </div>                                             
+                                            <div class="align-items-center col-auto col-lg-6 col-md-auto col-sm-auto col-xl-8 d-flex"> 
+                                                <div style="margin-right: 10px; margin-left: 10px;" class="text-justify"> 
+                                                    <p>A través del Centro Cultural &ldquo;Profr. Benito Macías García&rdquo; se invita a la comunidad maderense a integrarse a la Orquesta de Personas con Discapacidad, proyecto que buscan esté en funcionamiento para fines del presente año.</p>
+                                                    <p>Ese importante proyecto de carácter social tiene la finalidad de crear una orquesta representativa de Francisco I. Madero y motivar para su superación a todas aquellas personas amantes de la música y que sufren alguna discapacidad.</p> 
+                                                    <h2 class="mb-0"> <button class="btn btn-lg btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSiete" aria-expanded="false" aria-controls="collapseSiete">Leer más.....</button> </h2> 
+                                                </div>                                                 
+                                            </div>                                             
+                                        </div>                                         
+                                    </div>                                     
+                                    <div id="collapseSiete" class="collapse" aria-labelledby="headingSiete" data-parent="#accordionSiete"> 
+                                        <div class="card-body text-justify"> 
+                                            <div> 
+                                                <p>La invitación es a toda persona de este municipio con cualquier discapacidad que sepa o esté aprendiendo a tocar un instrumento a fin de que se integre a la orquesta. Pueden inscribirse en el Centro Cultural &ldquo;Profr. Benito Macías García&rdquo; de lunes a viernes de 9 de la mañana a tres de la tarde. Se les pide por favor que lleven sus instrumentos.</p>
+                                                <p>Los ensayos inician el 5 de julio de 4 a 6 de la tarde y se llevarán a cabo los lunes, martes y miércoles en la mencionada institución, con el objetivo de que para fines del presente año puedan realizar sus primeras interpretaciones.</p>
+                                                <p>La directora del centro cultural, Nancy Flores, hizo la invitación a la comunidad maderense que sea gustosa de apoyar este interesante proyecto cultural donando algún instrumento de percusión, como panderos, maracas, claves, etcétera, para que los lleven a las instalaciones de lo que anteriormente eran los silos.</p>
+                                                <p>Subrayó que, dado el origen de quienes integrarán la orquesta, y el objetivo de la misma, este proyecto tiene trascendencia social por el gran impacto que provocará entre la población, así como la representatividad que le dará a Francisco I. Madero.</p> 
+                                                <h2 class="mb-0 text-center"> <button class="btn btn-lg btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSiete" aria-expanded="false" aria-controls="collapseSiete">Leer menos.</button> </h2> 
+                                            </div>                                             
+                                        </div>                                         
+                                    </div>                                     
+                                </div>                                 
+                            </div>                             
+                        </div>                         
+                    </section>
                     <br/>
                     <section data-pg-name="Noticia Ocho"> 
                         <div class="container"> 
@@ -420,154 +566,6 @@ máxima&rdquo;, dijo.</p>
                                 </div>                                 
                             </div>                             
                         </div>                         
-                    </section>
-                    <br/>
-                    <section data-pg-name="Noticia Cuatro"> 
-                        <div class="container"> 
-                            <div class="accordion" id="accordionCuatro"> 
-                                <div class="card" style="border-radius: 25px;" id="nota1"> 
-                                    <div class="card-header" id="headingCuatro"> 
-                                        <div class="row"> 
-                                            <div class="col col-lg-6 col-md col-sm col-xl-4"> 
-                                                <label class="background-cover embed-responsive embed-responsive-4by3" style="border-radius: 15px; margin-top: 5px; margin-bottom: 5px; background-image: url('noticia_04.jpg');" id="nota_photo01"> 
-</label>                                                 
-                                            </div>                                             
-                                            <div class="align-items-center col-auto col-lg-6 col-md-auto col-sm-auto col-xl-8 d-flex"> 
-                                                <div style="margin-right: 10px; margin-left: 10px;" class="text-justify"> 
-                                                    <p>La Presidencia Municipal y el DIF Madero invitan a festejar a los papás de una manera diferente, sana y deportiva el próximo sábado, en el marco de la conmemoración del &ldquo;Día del Padre&rdquo;, con una competencia familiar de exatlón, en donde además se sortearán paquetes de carne asada.</p>
-                                                    <p>El alcalde Jonathan Ávalos Rodríguez indicó que esta vez se buscó un programa de festejo a los padres de manera distinta pero, a la vez, divertida, por lo que se ideó la competencia de exatlón, en la cual se dará oportunidad al público de que asista y disfrute el evento.</p> 
-                                                    <h2 class="mb-0"> <button class="btn btn-lg btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseCuatro" aria-expanded="false" aria-controls="collapseCuatro">Leer más.....</button> </h2> 
-                                                </div>                                                 
-                                            </div>                                             
-                                        </div>                                         
-                                    </div>                                     
-                                    <div id="collapseCuatro" class="collapse" aria-labelledby="headingCuatro" data-parent="#accordionCuatro"> 
-                                        <div class="card-body text-justify"> 
-                                            <div> 
-                                                <p>Dicha actividad tendrá lugar el próximo sábado 19 de junio en la Unidad Deportiva &ldquo;Francisco I. Madero&rdquo;, a partir de las siete de la tarde.</p>
-                                                <p>Sólo podrán participar ocho equipos, por lo que el presidente municipal urgió a las familias a integrarse cuanto antes e inscribirse en el número telefónico 8711277738 y lograr un lugar en este programa deportivo.</p>
-                                                <p>Detalló que se dará participación a 5 miembros de la familia, pudiendo ser el padre, tíos, hermanos, hijos, sobrinos, etcétera, todos mayores de 18 años.</p>
-                                                <p>Durante la celebración del exatlón se tendrá como actividad extra un cuadrangular de volibol y una demostración de canto, con el fin de que las familias que asistan tengan una completa tarde de diversión y relax.</p>
-                                                <p>Ávalos Rodríguez mencionó que las puertas de la Unidad Deportiva estarán abiertas al público en general que quiera asistir a presenciar el evento; únicamente se les pide llevar cubrebocas y respetar la sana distancia.</p> 
-                                                <h2 class="mb-0 text-center"> <button class="btn btn-lg btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseCuatro" aria-expanded="false" aria-controls="collapseCuatro">Leer menos.</button> </h2> 
-                                            </div>                                             
-                                        </div>                                         
-                                    </div>                                     
-                                </div>                                 
-                            </div>                             
-                        </div>                         
-                    </section>
-                    <br/>
-                    <section data-pg-name="Noticia Cinco"> 
-                        <div class="container"> 
-                            <div class="accordion" id="accordionCinco"> 
-                                <div class="card" style="border-radius: 25px;" id="nota1"> 
-                                    <div class="card-header" id="headingCinco"> 
-                                        <div class="row"> 
-                                            <div class="col col-lg-6 col-md col-sm col-xl-4"> 
-                                                <label class="background-cover embed-responsive embed-responsive-4by3" style="border-radius: 15px; margin-top: 5px; margin-bottom: 5px; background-image: url('noticia_05.jpg');" id="nota_photo01"> 
-</label>                                                 
-                                            </div>                                             
-                                            <div class="align-items-center col-auto col-lg-6 col-md-auto col-sm-auto col-xl-8 d-flex"> 
-                                                <div style="margin-right: 10px; margin-left: 10px;" class="text-justify"> 
-                                                    <p>El alcalde Jonathan Ávalos Rodríguez puso en marcha la construcción de una techumbre en la Escuela Primaria &ldquo;Mártires de Río Blanco&rdquo;, del ejido Florencia, para proteger de las inclemencias del tiempo a sus estudiantes cuando realicen actividades en sus ratos libres.</p>
-                                                    <p>En dicho evento fue acompañado por miembros del Cabildo y directoras del plantel anfitrión y de la USAER 102, que labora en una sección de dicho plantel.</p> 
-                                                    <h2 class="mb-0"> <button class="btn btn-lg btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseCinco" aria-expanded="false" aria-controls="collapseCinco">Leer más.....</button> </h2> 
-                                                </div>                                                 
-                                            </div>                                             
-                                        </div>                                         
-                                    </div>                                     
-                                    <div id="collapseCinco" class="collapse" aria-labelledby="headingCinco" data-parent="#accordionCinco"> 
-                                        <div class="card-body text-justify"> 
-                                            <div> 
-                                                <p>La directora de la primaria, Pamela Lizeth García Moreno, dio la bienvenida a las autoridades municipales, agradeciendo al alcalde &ldquo;que nos haga el honor de acompañarnos este día tan importante y de gran alegría para nuestra comunidad escolar, ya que como se los prometió en una de sus visitas a este plantel, hoy viene a dar inicio a esta obra&rdquo;.</p>
-                                                <p>Agregó que &ldquo;sabemos del gran compromiso que tiene con la educación de las niñas y los niños de nuestro municipio y se ha distinguido con ese espíritu de servicio que lo caracteriza, especialmente con los más vulnerables&rdquo;.</p>
-                                                <p>Por su parte, Andrea Hernández Mottu, alumna de la escuela primaria, agradeció al presidente municipal por haber escuchado con atención al grupo de madres de familia que le solicitó esta obra, porque aunque ha pasado el tiempo finalmente viene a cumplir su promesa.</p>
-                                                <p>En tanto, la directora de la USAER 102, Sandra Salazar Bárcenas, destacó el cumplimiento de su palabra que tiene el alcalde, porque no olvida sus compromisos y regresa para cumplirlos, como en el caso de esta techumbre. Agradeció también el hecho de que Jonathan Ávalos le haya donado una mesa a dicha Unidad, muy útil para las clases de sus alumnos.</p>
-                                                <p>Sonia de la Cruz de la Cruz, presidente de la Sociedad de Padres de Familia, señaló que &ldquo;a pesar de que hubo personas que afirmaron que esta obra no se realizaría, aquí está usted para demostrar lo contrario, lo cual le agradecemos infinitamente&rdquo;.</p>
-                                                <p>El presidente municipal agradeció la cálida recepción que le brindaron y dijo que en todo el municipio estarán construyendo este tipo de techumbres para proteger a los alumnos de los fuertes rayos del sol en sus momentos de recreo o actividades culturales.</p>
-                                                <p>&ldquo;Vamos a construir techumbres en los ejidos. Vamos a rehabilitar norias artesanales en 24 comunidades&hellip; Y más delante vamos a volver a Florencia para construirles la techumbre en la cancha del ejido&rdquo;, dijo el alcalde.</p>
-                                                <p>
-La ceremonia concluyó con el banderazo de inicio
-de los trabajos.</p> 
-                                                <h2 class="mb-0 text-center"> <button class="btn btn-lg btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseCinco" aria-expanded="false" aria-controls="collapseCinco">Leer menos.</button> </h2> 
-                                            </div>                                             
-                                        </div>                                         
-                                    </div>                                     
-                                </div>                                 
-                            </div>                             
-                        </div>                         
-                    </section>
-                    <br/>
-                    <section data-pg-name="Noticia Seis"> 
-                        <div class="container"> 
-                            <div class="accordion" id="accordionSeis"> 
-                                <div class="card" style="border-radius: 25px;" id="nota1"> 
-                                    <div class="card-header" id="headingSeis"> 
-                                        <div class="row"> 
-                                            <div class="col col-lg-6 col-md col-sm col-xl-4"> 
-                                                <label class="background-cover embed-responsive embed-responsive-4by3" style="border-radius: 15px; margin-top: 5px; margin-bottom: 5px; ;background-image:url('noticia_06.jpg');" id="nota_photo01"> 
-</label>                                                 
-                                            </div>                                             
-                                            <div class="align-items-center col-auto col-lg-6 col-md-auto col-sm-auto col-xl-8 d-flex"> 
-                                                <div style="margin-right: 10px; margin-left: 10px;" class="text-justify"> 
-                                                    <p>Joven cineasta que ganó el año pasado el Premio Nacional de la Juventud por su trayectoria artística busca darle impulso a través del cine a la zona desértica de nuestro municipio, el Valle de Acatita, especialmente a las finas y bellas dunas de sílice.</p>
-                                                    <p>Se trata de Gahel Casillas, actor, director, productor, guionista y activista social, nacido en Durango pero con el 100 por ciento de su sangre maderense, quien esta mañana ofreció una conferencia de prensa en compañía del alcalde Jonathan Ávalos Rodríguez en el Centro Cultural &ldquo;Profr. Benito Macías García&rdquo;.</p> 
-                                                    <h2 class="mb-0"> <button class="btn btn-lg btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeis" aria-expanded="false" aria-controls="collapseSeis">Leer más.....</button> </h2> 
-                                                </div>                                                 
-                                            </div>                                             
-                                        </div>                                         
-                                    </div>                                     
-                                    <div id="collapseSeis" class="collapse" aria-labelledby="headingSeis" data-parent="#accordionSeis"> 
-                                        <div class="card-body text-justify"> 
-                                            <div> 
-                                                <p>Gahel ha dirigido productos cinematográficos que ha recorrido los países de Paraguay, Colombia y México y su película &ldquo;Ad libitum&rdquo; fue finalista del congreso internacional &ldquo;SmartFilms&rdquo;. Ha escrito más de diez guiones para cine, teatro y adaptaciones para películas.</p>
-                                                <p>Tiene más de 8 años de experiencia en la actuación y más de 10 obras teatrales profesionales. Ha participado como actor en películas, cortometrajes y series de Netflix, Centro de Cinematografía y Actuación &ldquo;Dolores del Río&rdquo;, entre otros.</p>
-                                                <p>Próximamente estrenará su obra &ldquo;El Escape&rdquo; y varios proyectos en pro del arte y cultura, de los cuales destaca una película que buscan rodar en las dunas de Acatita, así como varios cortometrajes, para lo cual después de concluir la conferencia se dirigieron a aquel lugar.</p>
-                                                <p>&ldquo;Definitivamente que producciones como estas que se mencionan le darían un impuso al municipio de Francisco I. Madero en materia de turismo, de ahí la trascendencia de la labor de este joven, además de que nuestras dunas son únicas en toda América Latina y con una belleza superior a las de Viesca&rdquo;, dijo el alcalde Jonathan Ávalos Rodríguez.</p>
-                                                <p>Por su parte, el joven cineasta destacó que en primera instancia existe la propuesta de una película y para ello va a conocer el Valle de Acatita, con el objetivo de buscar si el lugar se adapta a las locaciones que pide esa cinta, pero además existe el objetivo de realizar varios documentales del municipio para llevarlos a festivales nacionales e internacionales.</p> 
-                                                <h2 class="mb-0 text-center"> <button class="btn btn-lg btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeis" aria-expanded="false" aria-controls="collapseSeis">Leer menos.</button> </h2> 
-                                            </div>                                             
-                                        </div>                                         
-                                    </div>                                     
-                                </div>                                 
-                            </div>                             
-                        </div>                         
-                    </section>
-                    <br/>
-                    <section data-pg-name="Noticia Siete"> 
-                        <div class="container"> 
-                            <div class="accordion" id="accordionSiete"> 
-                                <div class="card" style="border-radius: 25px;" id="nota1"> 
-                                    <div class="card-header" id="headingSiete"> 
-                                        <div class="row"> 
-                                            <div class="col col-lg-6 col-md col-sm col-xl-4"> 
-                                                <label class="background-cover embed-responsive embed-responsive-4by3" style="border-radius: 15px; margin-top: 5px; margin-bottom: 5px; ;background-image:url('noticia_07.jpg');" id="nota_photo01"> 
-</label>                                                 
-                                            </div>                                             
-                                            <div class="align-items-center col-auto col-lg-6 col-md-auto col-sm-auto col-xl-8 d-flex"> 
-                                                <div style="margin-right: 10px; margin-left: 10px;" class="text-justify"> 
-                                                    <p>Para beneficiar la economía de las personas de escasos recursos, la Presidencia Municipal ofrece un programa de vivienda, mediante el cual construirá tres cuartos para habitación en una superficie de 10x20 metros a un precio subsidiado para las familias.</p>
-                                                    <p>Quienes se interesen en estas acciones deben presentarse en el Departamento de Proyectos, ubicado en la Unidad Deportiva, llevando original y dos copias de la siguiente documentación: Acta de nacimiento, credencial de elector, CURP, comprobante de domicilio, RFC, acta de matrimonio y título del terreno o documento que acredite la propiedad.</p> 
-                                                    <h2 class="mb-0"> <button class="btn btn-lg btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSiete" aria-expanded="false" aria-controls="collapseSiete">Leer más.....</button> </h2> 
-                                                </div>                                                 
-                                            </div>                                             
-                                        </div>                                         
-                                    </div>                                     
-                                    <div id="collapseSiete" class="collapse" aria-labelledby="headingSiete" data-parent="#accordionSiete"> 
-                                        <div class="card-body text-justify"> 
-                                            <div> 
-                                                <p>No se incluirá a personas que no tengan en regla la documentación que acredite la propiedad del terreno.</p>
-                                                <p>&ldquo;El propósito de este programa, que se llevará a cabo con recursos del municipio, es beneficiar a quienes disponen de un terreno pero carecen de recursos para fincar. Estas acciones serán de gran impacto social, ya que los interesados sólo pagarán una parte del valor total de la obra&rdquo;, dijo el alcalde Jonathan Ávalos Rodríguez.</p>
-                                                <p>Agregó que la normativa del Fondo de Aportaciones de donde se financiará este programa exige que las cosas se hagan dentro de la ley, por eso se dará participación sólo a las familias que tengan la propiedad legal de sus terrenos, con documento en mano.</p>
-                                                <p>Las personas interesadas en este beneficio deben acudir al Departamento de Proyectos de lunes a viernes de 9 de la mañana a tres de la tarde llevando la documentación requerida. Ahí se les explicará en qué consiste el programa y se aclarará toda duda que tengan.</p> 
-                                                <h2 class="mb-0 text-center"> <button class="btn btn-lg btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSiete" aria-expanded="false" aria-controls="collapseSiete">Leer menos.</button> </h2> 
-                                            </div>                                             
-                                        </div>                                         
-                                    </div>                                     
-                                </div>                                 
-                            </div>                             
-                        </div>                         
                     </section>                     
                     <style>#nota1 { background-color: #f5f5f5; border-radius: 20px; box-shadow: 7px 7px 1px #6f1837; transition: 0.1s ease; } #nota1:hover { background-color: #ffffff; border-radius: 20px; box-shadow: 7px 7px 1px #835969; transform: translate3d(-5px,-5px,0); transition: 0.1s ease; }</style>
                     <br/> 
@@ -659,7 +657,30 @@ de los trabajos.</p>
                     <p class="mb-0">Ayuntamiento 2019 - 2021</p> 
                 </div>                 
             </div>             
-        </footer>         
+        </footer>
+        <div id="fb-root"></div>
+        <div id="fb-customer-chat" class="fb-customerchat">
+</div>
+        <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "125485292574108");
+      chatbox.setAttribute("attribution", "biz_inbox");
+
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v11.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>         
         <script src="assets/js/jquery.min.js"></script>         
         <script src="assets/js/popper.js"></script>         
         <script src="bootstrap/js/bootstrap.min.js"></script>         
